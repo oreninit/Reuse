@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Reuse_Example' do
+  pod 'Reuse', :path => '../'
+
+  target 'Reuse_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
