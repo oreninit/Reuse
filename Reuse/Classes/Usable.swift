@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+
+/// A protocol describing an object that can be used to configure a `Reusable`
+public protocol Usable {
+    
+}
