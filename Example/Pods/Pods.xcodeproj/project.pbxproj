@@ -7,22 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012FCBC4107A647CEC49B83A85942D88 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737B1BCB1A4DB994F093EA770C9C408 /* Reusable.swift */; };
-		0E21BEC48C202FC113B18DC9C5B4AFB4 /* NullInstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E78FC2F8E3B371A775385A0A4A465 /* NullInstanceReuser.swift */; };
 		1496BCDB1D05B9A7FB453652C6BE78F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1B19C13AF1C1FA0E4E2E413A8FEC492E /* UITableViewReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DBB5F575F8E650912290470FAFD59 /* UITableViewReuser.swift */; };
 		2176FC151D544482E3C8985C97DAD9D2 /* Pods-Reuse_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D7156E0B40F8138FAA3F8C13F2526D /* Pods-Reuse_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		394895AB666BC0829419BBE14F69732B /* Reuse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D384265A0474349B904ED188B303BD5 /* Reuse-dummy.m */; };
 		40F2F5919CF946E39740EB63C098451F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		506F051C6F86296D65B8651840D2A670 /* DataInstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE536F8810E7080904D91FBBD06E4624 /* DataInstanceReuser.swift */; };
 		59D849E8064E0494750607F603ED57D6 /* Pods-Reuse_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBFC466346C68BC951CD152477BDAD4 /* Pods-Reuse_Tests-dummy.m */; };
+		66916312A89065A7D3C97E837B6AC751 /* Usable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DACB555E799DE4E346D6C91F35D10D3 /* Usable.swift */; };
 		67F53526847B943EF42E403F4326A18A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		72381FA9AF11ABB76DE6D37D060293A1 /* InstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3CAEDB325934F4B7DE6FC666C8CE25 /* InstanceReuser.swift */; };
+		75DFBC6BE3C375258D018FF14B275285 /* NullInstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAEE26C77A9831C5C54E86B635AEEF /* NullInstanceReuser.swift */; };
+		792F5D8AB9249903D2F16AD511E8887C /* Handoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB02D3DBB857C172C31DB80780F430F5 /* Handoff.swift */; };
 		8A3FB5338F562D970188E1F0786CB44F /* Pods-Reuse_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 496F3994AB5A53465209180C7DD3C4D9 /* Pods-Reuse_Example-dummy.m */; };
-		8A517661687623936749640CDB590DC2 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D04288E4CA3843E012B4DA26C6340D /* DataProvider.swift */; };
-		A81A7015297E943148EA3FDA5A1426F8 /* Reuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A813B24E81A0F98309349502D8882 /* Reuser.swift */; };
-		F2ED4A79DD4DFD86DF2FDCDDECE8C989 /* Reuse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D384265A0474349B904ED188B303BD5 /* Reuse-dummy.m */; };
-		F4327B1613A2EAAD17E91F8BBB590A34 /* Usable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775B36843F61A3033217404BD1E755CD /* Usable.swift */; };
+		8AB01C28D956468AE1280FE1245441F6 /* DataInstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75774303A305233C9E4DC91A921FF915 /* DataInstanceReuser.swift */; };
+		B0474ED2C61796E800CC9873A11F79A2 /* Reuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0925459403B65D6AE4513F27FCA9F4 /* Reuser.swift */; };
+		B060A0C5ED5F04AE1F2449C821053DEB /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726E2B39D83533CBF0A6DBF1E61FE8E /* DataProvider.swift */; };
+		B26F6CB17C4D2C385DDFA96CC24111B4 /* AnyInstaceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA1AF3522C6CADACECCC7BF9BFA5D16 /* AnyInstaceReuser.swift */; };
+		ED9D2139E4177195D4D6CE08FFFFDFEF /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE40ED5DEA81E79722BD6C416420B63 /* Reusable.swift */; };
 		F526FD6FF2074D10E8BF08EF898C0B84 /* Reuse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5378A31909D90A50B22EB3C08592286 /* Reuse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB2FB28E12B139C10AA967C2202A8CA9 /* Pods-Reuse_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 800879A7D0D00FA16B3A5A72A2D494EB /* Pods-Reuse_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC46A954EA55CA6A8C1454E12C7BE26B /* InstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430A9D4DD866933761F88FFC38EB60F7 /* InstanceReuser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,39 +40,42 @@
 
 /* Begin PBXFileReference section */
 		0D384265A0474349B904ED188B303BD5 /* Reuse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reuse-dummy.m"; sourceTree = "<group>"; };
+		0DA1AF3522C6CADACECCC7BF9BFA5D16 /* AnyInstaceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyInstaceReuser.swift; sourceTree = "<group>"; };
 		1ABD99F9CC34DF6FA9723A8FCD18FE53 /* Reuse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reuse-prefix.pch"; sourceTree = "<group>"; };
 		1C47160ECE898D91D4C8B6B7CBFB71B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		291E78FC2F8E3B371A775385A0A4A465 /* NullInstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NullInstanceReuser.swift; sourceTree = "<group>"; };
 		2CA98BB1451268BE6EC6A709D8B9F463 /* Reuse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reuse.xcconfig; sourceTree = "<group>"; };
-		2CE93DC3A3A397F32BEF32DC82EBCC1E /* Pods_Reuse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reuse_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31D04288E4CA3843E012B4DA26C6340D /* DataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		2CE93DC3A3A397F32BEF32DC82EBCC1E /* Pods_Reuse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Reuse_Tests.framework; path = "Pods-Reuse_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		367CFB90F00CD7021764E7E4E3188BCF /* Pods-Reuse_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Reuse_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3DACB555E799DE4E346D6C91F35D10D3 /* Usable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Usable.swift; sourceTree = "<group>"; };
 		3FA783A095D2BEC783B2DCCA5174954E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		430A9D4DD866933761F88FFC38EB60F7 /* InstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstanceReuser.swift; sourceTree = "<group>"; };
 		46D7156E0B40F8138FAA3F8C13F2526D /* Pods-Reuse_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reuse_Example-umbrella.h"; sourceTree = "<group>"; };
 		496F3994AB5A53465209180C7DD3C4D9 /* Pods-Reuse_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reuse_Example-dummy.m"; sourceTree = "<group>"; };
 		53DF04B08198A66DD3386FCC869B0F0B /* Pods-Reuse_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reuse_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5E6F51073A67BB51458A447FBADF2308 /* Pods-Reuse_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Tests-resources.sh"; sourceTree = "<group>"; };
-		748F52A5922D5089A3730C397A52D4B6 /* Pods-Reuse_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Reuse_Tests.modulemap"; sourceTree = "<group>"; };
-		764DD9874D97D53D5F4687FBED665646 /* Pods_Reuse_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reuse_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		775B36843F61A3033217404BD1E755CD /* Usable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Usable.swift; sourceTree = "<group>"; };
+		66CAEE26C77A9831C5C54E86B635AEEF /* NullInstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NullInstanceReuser.swift; sourceTree = "<group>"; };
+		748F52A5922D5089A3730C397A52D4B6 /* Pods-Reuse_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Reuse_Tests.modulemap"; sourceTree = "<group>"; };
+		75774303A305233C9E4DC91A921FF915 /* DataInstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataInstanceReuser.swift; sourceTree = "<group>"; };
+		764DD9874D97D53D5F4687FBED665646 /* Pods_Reuse_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Reuse_Example.framework; path = "Pods-Reuse_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		800879A7D0D00FA16B3A5A72A2D494EB /* Pods-Reuse_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reuse_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8514F150D24D8CEA27D36C76A6AA8FFA /* Pods-Reuse_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8945E6560C32A0C3D070C1EC3296E233 /* Pods-Reuse_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		923101E81E7E988C616E8AC2ABE72356 /* Pods-Reuse_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Reuse_Example.modulemap"; sourceTree = "<group>"; };
-		935653BB42832ECC03DD1E1D0131B082 /* Reuse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Reuse.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		923101E81E7E988C616E8AC2ABE72356 /* Pods-Reuse_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Reuse_Example.modulemap"; sourceTree = "<group>"; };
+		935653BB42832ECC03DD1E1D0131B082 /* Reuse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Reuse.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94D470B9E8C9B0B9674AA542C4B73B4F /* Pods-Reuse_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Reuse_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9B7A813B24E81A0F98309349502D8882 /* Reuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reuser.swift; sourceTree = "<group>"; };
+		9A0925459403B65D6AE4513F27FCA9F4 /* Reuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reuser.swift; sourceTree = "<group>"; };
+		AB02D3DBB857C172C31DB80780F430F5 /* Handoff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Handoff.swift; sourceTree = "<group>"; };
 		B6EC8FBA5FE69DAD6DC787BB5B8CB96D /* Pods-Reuse_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Reuse_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA751117C05F91EE24D8BC96E34C1798 /* Pods-Reuse_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Reuse_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB3CAEDB325934F4B7DE6FC666C8CE25 /* InstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstanceReuser.swift; sourceTree = "<group>"; };
 		BE2217742B31ECB0E1C2A81CBBE5961D /* Pods-Reuse_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reuse_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF362970940F3319C6B6AE4F1080BDB4 /* Pods-Reuse_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Example-resources.sh"; sourceTree = "<group>"; };
-		C737B1BCB1A4DB994F093EA770C9C408 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBF06201F1DB41000D04CDEC09274DBF /* Pods-Reuse_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reuse_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CE536F8810E7080904D91FBBD06E4624 /* DataInstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataInstanceReuser.swift; sourceTree = "<group>"; };
-		E934382BAC7AEFC8B7BEF2966E0126CE /* Reuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6DBB5F575F8E650912290470FAFD59 /* UITableViewReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewReuser.swift; sourceTree = "<group>"; };
+		E726E2B39D83533CBF0A6DBF1E61FE8E /* DataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		E934382BAC7AEFC8B7BEF2966E0126CE /* Reuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reuse.framework; path = Reuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE40ED5DEA81E79722BD6C416420B63 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		EE361495A24E2C0305732625601A46A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F21D9E7769EEA8C7F03E3580D6945D7E /* Pods-Reuse_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reuse_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F5378A31909D90A50B22EB3C08592286 /* Reuse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reuse-umbrella.h"; sourceTree = "<group>"; };
@@ -163,6 +169,15 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		8CBD8A34BFD0395C25BB7D73DB99495D /* Reuse */ = {
+			isa = PBXGroup;
+			children = (
+				AB1A5FC15882F18F75B0FB849AE61301 /* Classes */,
+			);
+			name = Reuse;
+			path = Reuse;
+			sourceTree = "<group>";
+		};
 		93DC9FEDC0D1A713E922A202FB6C92DE /* Pods-Reuse_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,10 +206,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AB1A5FC15882F18F75B0FB849AE61301 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0DA1AF3522C6CADACECCC7BF9BFA5D16 /* AnyInstaceReuser.swift */,
+				75774303A305233C9E4DC91A921FF915 /* DataInstanceReuser.swift */,
+				E726E2B39D83533CBF0A6DBF1E61FE8E /* DataProvider.swift */,
+				AB02D3DBB857C172C31DB80780F430F5 /* Handoff.swift */,
+				BB3CAEDB325934F4B7DE6FC666C8CE25 /* InstanceReuser.swift */,
+				66CAEE26C77A9831C5C54E86B635AEEF /* NullInstanceReuser.swift */,
+				EAE40ED5DEA81E79722BD6C416420B63 /* Reusable.swift */,
+				9A0925459403B65D6AE4513F27FCA9F4 /* Reuser.swift */,
+				DB6DBB5F575F8E650912290470FAFD59 /* UITableViewReuser.swift */,
+				3DACB555E799DE4E346D6C91F35D10D3 /* Usable.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		AC6DF8CF7689E822159D199D61F29564 /* Reuse */ = {
 			isa = PBXGroup;
 			children = (
-				D65BB8B4E275616435A81CF2EEE7898A /* Reuse */,
+				8CBD8A34BFD0395C25BB7D73DB99495D /* Reuse */,
 				6021621258EC9FE2B74254C3A364D210 /* Support Files */,
 			);
 			name = Reuse;
@@ -207,28 +240,6 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C1C47CECB0C418059E734FB2F4A79233 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CE536F8810E7080904D91FBBD06E4624 /* DataInstanceReuser.swift */,
-				31D04288E4CA3843E012B4DA26C6340D /* DataProvider.swift */,
-				430A9D4DD866933761F88FFC38EB60F7 /* InstanceReuser.swift */,
-				291E78FC2F8E3B371A775385A0A4A465 /* NullInstanceReuser.swift */,
-				C737B1BCB1A4DB994F093EA770C9C408 /* Reusable.swift */,
-				9B7A813B24E81A0F98309349502D8882 /* Reuser.swift */,
-				775B36843F61A3033217404BD1E755CD /* Usable.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		D65BB8B4E275616435A81CF2EEE7898A /* Reuse */ = {
-			isa = PBXGroup;
-			children = (
-				C1C47CECB0C418059E734FB2F4A79233 /* Classes */,
-			);
-			path = Reuse;
 			sourceTree = "<group>";
 		};
 		DC38CAD5EAE0DC82C3112B90855BF2CB /* Targets Support Files */ = {
@@ -291,7 +302,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E15AD3104A9683644C150D75D690F8DF /* Build configuration list for PBXNativeTarget "Reuse" */;
 			buildPhases = (
-				1DDCFFFC7C60BEA548D2812121E0AE97 /* Sources */,
+				4E2AD9F8D28F172A2928BE9DE93CA528 /* Sources */,
 				A05FEB2FD3C5A41A2721B6938301F8BC /* Frameworks */,
 				2FCDBBB25576D1A2B47EF8F3972ED591 /* Headers */,
 			);
@@ -351,26 +362,29 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1DDCFFFC7C60BEA548D2812121E0AE97 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				506F051C6F86296D65B8651840D2A670 /* DataInstanceReuser.swift in Sources */,
-				8A517661687623936749640CDB590DC2 /* DataProvider.swift in Sources */,
-				FC46A954EA55CA6A8C1454E12C7BE26B /* InstanceReuser.swift in Sources */,
-				0E21BEC48C202FC113B18DC9C5B4AFB4 /* NullInstanceReuser.swift in Sources */,
-				012FCBC4107A647CEC49B83A85942D88 /* Reusable.swift in Sources */,
-				F2ED4A79DD4DFD86DF2FDCDDECE8C989 /* Reuse-dummy.m in Sources */,
-				A81A7015297E943148EA3FDA5A1426F8 /* Reuser.swift in Sources */,
-				F4327B1613A2EAAD17E91F8BBB590A34 /* Usable.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2F67403236F1D72FB3AA1F8BF6B9963E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				59D849E8064E0494750607F603ED57D6 /* Pods-Reuse_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E2AD9F8D28F172A2928BE9DE93CA528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26F6CB17C4D2C385DDFA96CC24111B4 /* AnyInstaceReuser.swift in Sources */,
+				8AB01C28D956468AE1280FE1245441F6 /* DataInstanceReuser.swift in Sources */,
+				B060A0C5ED5F04AE1F2449C821053DEB /* DataProvider.swift in Sources */,
+				792F5D8AB9249903D2F16AD511E8887C /* Handoff.swift in Sources */,
+				72381FA9AF11ABB76DE6D37D060293A1 /* InstanceReuser.swift in Sources */,
+				75DFBC6BE3C375258D018FF14B275285 /* NullInstanceReuser.swift in Sources */,
+				ED9D2139E4177195D4D6CE08FFFFDFEF /* Reusable.swift in Sources */,
+				394895AB666BC0829419BBE14F69732B /* Reuse-dummy.m in Sources */,
+				B0474ED2C61796E800CC9873A11F79A2 /* Reuser.swift in Sources */,
+				1B19C13AF1C1FA0E4E2E413A8FEC492E /* UITableViewReuser.swift in Sources */,
+				66916312A89065A7D3C97E837B6AC751 /* Usable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

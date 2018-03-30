@@ -10,11 +10,13 @@
 		06CBF2D0034B042E7C78C88C /* Pods_Reuse_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AFDB6551FEDEA161A25114 /* Pods_Reuse_Example.framework */; };
 		15919B2C1A2B1C70CCC2E0C5 /* Pods_Reuse_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33FA543FBD38F5FE45B3D86 /* Pods_Reuse_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		EAECAA95206E0E6400746815 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECAA94206E0E6400746815 /* TableViewController.swift */; };
+		EAECAA97206E0E7000746815 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECAA96206E0E7000746815 /* DetailsViewController.swift */; };
+		EAECAA9B206E0F9A00746815 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECAA9A206E0F9A00746815 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +32,12 @@
 /* Begin PBXFileReference section */
 		22AFDB6551FEDEA161A25114 /* Pods_Reuse_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reuse_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BC8C7EC8F03857BBCE1A2C /* Pods-Reuse_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reuse_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reuse_Example/Pods-Reuse_Example.release.xcconfig"; sourceTree = "<group>"; };
-		42B695930F1448C6DD394F3B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		42B695930F1448C6DD394F3B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4D6429F2004D9567B9694B5E /* Pods-Reuse_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reuse_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reuse_Tests/Pods-Reuse_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		539B2C0525F08C1BDC2FFAA5 /* Pods-Reuse_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reuse_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reuse_Tests/Pods-Reuse_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Reuse_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reuse_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,9 +45,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		87F06334AC12B311A569750D /* Pods-Reuse_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reuse_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reuse_Example/Pods-Reuse_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8D079F97CEBD30E31FDCC82B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8D079F97CEBD30E31FDCC82B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EAECAA94206E0E6400746815 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EAECAA96206E0E7000746815 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		EAECAA9A206E0F9A00746815 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F33FA543FBD38F5FE45B3D86 /* Pods_Reuse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reuse_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F59D61AA54104847F8E18A67 /* Reuse.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Reuse.podspec; path = ../Reuse.podspec; sourceTree = "<group>"; };
+		F59D61AA54104847F8E18A67 /* Reuse.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Reuse.podspec; path = ../Reuse.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +97,11 @@
 		607FACD21AFB9204008FA782 /* Example for Reuse */ = {
 			isa = PBXGroup;
 			children = (
+				EAECAA99206E0F8600746815 /* Model */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				EAECAA94206E0E6400746815 /* TableViewController.swift */,
+				EAECAA96206E0E7000746815 /* DetailsViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -157,6 +163,14 @@
 				F33FA543FBD38F5FE45B3D86 /* Pods_Reuse_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAECAA99206E0F8600746815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAECAA9A206E0F9A00746815 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,8 +375,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				EAECAA9B206E0F9A00746815 /* User.swift in Sources */,
+				EAECAA95206E0E6400746815 /* TableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				EAECAA97206E0E7000746815 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
