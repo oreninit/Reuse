@@ -70,10 +70,8 @@ internal struct DataInstanceReuser: InstanceReuser {
     }
     
     private func objectIndex(for indexPath: IndexPath) -> ObjectIndex {
-        let objectIndex = indexPath.item
-        let sectionIndex = indexPath.section
-        let section = data.sections[sectionIndex]
-        let index = ObjectIndex(objectIndex: objectIndex, section: section, sectionIndex: sectionIndex)
+        let section = data.sections[indexPath.section]
+        let index = ObjectIndex(indexPath: indexPath, section: section)
         return index
     }
 }

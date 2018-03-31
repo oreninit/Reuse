@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,6 +26,56 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wrq-wl-qfo">
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell.user" rowHeight="110" id="5pa-5m-Brl">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5pa-5m-Brl" id="5xs-fH-f36">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUI-gv-06n">
+                                                    <rect key="frame" x="90" y="10" width="61.5" height="31.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubs-zM-S4p">
+                                                    <rect key="frame" x="90" y="43.5" width="37.5" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c56-DQ-gkc">
+                                                    <rect key="frame" x="15" y="10" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="c56-DQ-gkc" secondAttribute="height" multiplier="1:1" id="mhT-zI-gF1"/>
+                                                        <constraint firstAttribute="width" constant="60" id="rWz-Yd-PwE"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkL-Ys-Xwq">
+                                                    <rect key="frame" x="15" y="80" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yUI-gv-06n" firstAttribute="top" secondItem="5xs-fH-f36" secondAttribute="top" constant="10" id="6NJ-u8-PHG"/>
+                                                <constraint firstItem="c56-DQ-gkc" firstAttribute="top" secondItem="5xs-fH-f36" secondAttribute="top" constant="10" id="Myb-go-nF1"/>
+                                                <constraint firstItem="Ubs-zM-S4p" firstAttribute="top" secondItem="yUI-gv-06n" secondAttribute="bottom" constant="2" id="NPc-gk-GNH"/>
+                                                <constraint firstItem="yUI-gv-06n" firstAttribute="leading" secondItem="c56-DQ-gkc" secondAttribute="trailing" constant="15" id="Naf-Oi-cnW"/>
+                                                <constraint firstItem="CkL-Ys-Xwq" firstAttribute="top" secondItem="c56-DQ-gkc" secondAttribute="bottom" constant="10" id="THo-Vu-Y7Q"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yUI-gv-06n" secondAttribute="trailing" constant="10" id="aYh-6O-TjW"/>
+                                                <constraint firstItem="Ubs-zM-S4p" firstAttribute="leading" secondItem="yUI-gv-06n" secondAttribute="leading" id="dBQ-rD-GR8"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="CkL-Ys-Xwq" secondAttribute="trailing" constant="10" id="ht9-HW-x4N"/>
+                                                <constraint firstItem="c56-DQ-gkc" firstAttribute="leading" secondItem="5xs-fH-f36" secondAttribute="leading" constant="15" id="ine-tX-j3u"/>
+                                                <constraint firstItem="CkL-Ys-Xwq" firstAttribute="leading" secondItem="c56-DQ-gkc" secondAttribute="leading" id="m51-t6-vBJ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ubs-zM-S4p" secondAttribute="trailing" constant="10" id="mUS-eZ-Z99"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

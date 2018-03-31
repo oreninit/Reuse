@@ -12,7 +12,7 @@ import Foundation
 public protocol Section: class {
     
     /// An array of objects for current section
-    var objects: [Usable] { get }
+    var objects: [Usable] { get set }
 }
 
 
@@ -30,7 +30,6 @@ public protocol DataProvider: class {
     
     /// An action to ask for an object to be deleted. If returns `false`, the tableView will not be updated.
     /// Allows control that terms are met, before deleting the object and updating the tableView.
-    /// Default is `false`
     func deleteObject(at index: ObjectIndex) -> Bool
     
     /// Controls whether a cell can be moved to a new indexPath.
@@ -50,7 +49,9 @@ public extension DataProvider {
     }
     
     func deleteObject(at index: ObjectIndex) -> Bool {
-        return false
+        guard isInBounds(index.indexPath) else { return false }
+        sections[index.sectionIndex].objects.remove(at: index.objectIndex)
+        return true
     }
     
     func canMoveObject(at index: ObjectIndex) -> Bool {
@@ -58,18 +59,33 @@ public extension DataProvider {
     }
     
     func moveObject(from fromIndex: ObjectIndex, to toIndex: ObjectIndex) -> Bool {
-        return false
+        guard isInBounds(fromIndex.indexPath) else { return false }
+        let object = sections[fromIndex.sectionIndex].objects.remove(at: fromIndex.objectIndex)
+        sections[toIndex.sectionIndex].objects.insert(object, at: toIndex.objectIndex)
+        return true
     }
 }
 
-/// A struct which represents a position of an object in the dataSource.
+internal extension DataProvider {
+
+    func isInBounds(_ indexPath: IndexPath) -> Bool {
+        return (indexPath.section < sections.count &&
+                indexPath.item < sections[indexPath.section].objects.count)
+    }
+}
+
+/// A struct which represents a position of an object in the data source.
 public struct ObjectIndex {
-    /// An index of the object in `Section`'s `objects` array.
-    let objectIndex: Int
+    
+    /// IndexPath for object in data
+    let indexPath: IndexPath
     /// A protocol representation of the instance.
     let section: Section
+    
+    /// An index of the object in `Section`'s `objects` array.
+    var objectIndex: Int { return indexPath.item }
     /// An index of the section in `DataProvider`'s `sections` array.
-    let sectionIndex: Int
+    var sectionIndex: Int { return indexPath.section}
 }
 
 public extension DataProvider where Self: Section {

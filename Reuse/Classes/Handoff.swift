@@ -11,7 +11,7 @@ public extension UITableView {
     
     func handoff(to reuser: Reuser) {
         reuser.tableView = self
-        dataSource = reuser
         delegate = reuser
+        dataSource = reuser
     }
 }

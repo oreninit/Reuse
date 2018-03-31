@@ -18,6 +18,10 @@ public class Reuser: NSObject {
         super.init()
     }
     
+    public subscript(indexPath: IndexPath) -> InstanceReuser {
+        return on(indexPath: indexPath)
+    }
+    
     // MARK:- Public
     public func attach(_ tableView: UITableView?) {
         self.tableView = tableView
@@ -57,6 +61,9 @@ public class Reuser: NSObject {
     
     // MARK:- Private
     internal func getObject(at indexPath: IndexPath) -> Usable {
+        guard dataProvider.isInBounds(indexPath) else {
+            assert(false, "IndexPath \(indexPath) out of bounds of current data source")
+        }
         return dataProvider.sections[indexPath.section].objects[indexPath.item]
     }
 }

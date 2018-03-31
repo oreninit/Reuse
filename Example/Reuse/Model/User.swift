@@ -10,6 +10,8 @@ import Foundation
 import Reuse
 
 struct User: Usable {
-    
-    
+    let name: String
+    let email: String
+    let birthday: Date
+    let country: String
 }
