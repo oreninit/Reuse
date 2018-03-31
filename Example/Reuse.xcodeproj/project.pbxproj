@@ -14,11 +14,12 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		EAD23E5F206F7C2F00596E89 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E5E206F7C2F00596E89 /* UserTableViewCell.swift */; };
-		EAD23E64206F7C8E00596E89 /* UsersDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E63206F7C8E00596E89 /* UsersDatabase.swift */; };
+		EAD23E5F206F7C2F00596E89 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E5E206F7C2F00596E89 /* PersonTableViewCell.swift */; };
+		EAD23E64206F7C8E00596E89 /* PeopleDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E63206F7C8E00596E89 /* PeopleDatabase.swift */; };
+		EAD23E66206F9B5600596E89 /* PersonReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E65206F9B5600596E89 /* PersonReuser.swift */; };
 		EAECAA95206E0E6400746815 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECAA94206E0E6400746815 /* TableViewController.swift */; };
 		EAECAA97206E0E7000746815 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECAA96206E0E7000746815 /* DetailsViewController.swift */; };
-		EAECAA9B206E0F9A00746815 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECAA9A206E0F9A00746815 /* User.swift */; };
+		EAECAA9B206E0F9A00746815 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECAA9A206E0F9A00746815 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +49,12 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		87F06334AC12B311A569750D /* Pods-Reuse_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reuse_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reuse_Example/Pods-Reuse_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8D079F97CEBD30E31FDCC82B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		EAD23E5E206F7C2F00596E89 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
-		EAD23E63206F7C8E00596E89 /* UsersDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDatabase.swift; sourceTree = "<group>"; };
+		EAD23E5E206F7C2F00596E89 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		EAD23E63206F7C8E00596E89 /* PeopleDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDatabase.swift; sourceTree = "<group>"; };
+		EAD23E65206F9B5600596E89 /* PersonReuser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonReuser.swift; sourceTree = "<group>"; };
 		EAECAA94206E0E6400746815 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EAECAA96206E0E7000746815 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		EAECAA9A206E0F9A00746815 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EAECAA9A206E0F9A00746815 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		F33FA543FBD38F5FE45B3D86 /* Pods_Reuse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reuse_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59D61AA54104847F8E18A67 /* Reuse.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Reuse.podspec; path = ../Reuse.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +103,6 @@
 		607FACD21AFB9204008FA782 /* Example for Reuse */ = {
 			isa = PBXGroup;
 			children = (
-				EAECAA99206E0F8600746815 /* Model */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				EAD23E60206F7C3600596E89 /* TableView */,
@@ -172,6 +173,7 @@
 		EAD23E60206F7C3600596E89 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				EAECAA99206E0F8600746815 /* Model */,
 				EAD23E62206F7C7200596E89 /* Database */,
 				EAD23E61206F7C6C00596E89 /* UI */,
 			);
@@ -182,7 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				EAECAA94206E0E6400746815 /* TableViewController.swift */,
-				EAD23E5E206F7C2F00596E89 /* UserTableViewCell.swift */,
+				EAD23E5E206F7C2F00596E89 /* PersonTableViewCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -190,7 +192,7 @@
 		EAD23E62206F7C7200596E89 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				EAD23E63206F7C8E00596E89 /* UsersDatabase.swift */,
+				EAD23E63206F7C8E00596E89 /* PeopleDatabase.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -198,7 +200,8 @@
 		EAECAA99206E0F8600746815 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EAECAA9A206E0F9A00746815 /* User.swift */,
+				EAECAA9A206E0F9A00746815 /* Person.swift */,
+				EAD23E65206F9B5600596E89 /* PersonReuser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,12 +408,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAECAA9B206E0F9A00746815 /* User.swift in Sources */,
+				EAECAA9B206E0F9A00746815 /* Person.swift in Sources */,
 				EAECAA95206E0E6400746815 /* TableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				EAECAA97206E0E7000746815 /* DetailsViewController.swift in Sources */,
-				EAD23E5F206F7C2F00596E89 /* UserTableViewCell.swift in Sources */,
-				EAD23E64206F7C8E00596E89 /* UsersDatabase.swift in Sources */,
+				EAD23E5F206F7C2F00596E89 /* PersonTableViewCell.swift in Sources */,
+				EAD23E64206F7C8E00596E89 /* PeopleDatabase.swift in Sources */,
+				EAD23E66206F9B5600596E89 /* PersonReuser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,6 +35,11 @@ extension Reuser: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        on(indexPath: indexPath).select()
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return on(indexPath: indexPath).height
     }

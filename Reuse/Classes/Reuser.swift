@@ -18,25 +18,18 @@ public class Reuser: NSObject {
         super.init()
     }
     
-    public subscript(indexPath: IndexPath) -> InstanceReuser {
-        return on(indexPath: indexPath)
-    }
-    
     // MARK:- Public
-    public func attach(_ tableView: UITableView?) {
-        self.tableView = tableView
-    }
-    
-    func register(_ instanceReuser: InstanceReuser, for object: Usable.Type) {
+    // Attach elements
+    public func register(_ instanceReuser: InstanceReuser, for object: Usable.Type) {
         instances[object.name] = instanceReuser
     }
-    
-    public func numberOfSections() -> Int {
-        return dataProvider.sections.count
+    public func setTableView(_ tableView: UITableView?) {
+        self.tableView = tableView
     }
-    
-    public func numberOfItems(in section: Int) -> Int {
-        return dataProvider.sections[section].objects.count
+
+    // Get InstanceReuser
+    public subscript(indexPath: IndexPath) -> InstanceReuser {
+        return on(indexPath: indexPath)
     }
     
     public func on(indexPath: IndexPath) -> InstanceReuser {
@@ -57,6 +50,16 @@ public class Reuser: NSObject {
         }
         dataReuser.setObject(object)
         return dataReuser
+    }
+
+    // TableData
+    
+    public func numberOfSections() -> Int {
+        return dataProvider.sections.count
+    }
+    
+    public func numberOfItems(in section: Int) -> Int {
+        return dataProvider.sections[section].objects.count
     }
     
     // MARK:- Private

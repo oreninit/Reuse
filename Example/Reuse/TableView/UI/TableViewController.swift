@@ -11,6 +11,8 @@ import Reuse
 
 class TableViewController: UIViewController {
 
+    lazy var data: PeopleDatabase = PeopleDatabase()
+    
     private var reuser: Reuser!
     
     
@@ -18,7 +20,18 @@ class TableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = "Friends list"
+        reuser = Reuser.configure(withData: data, viewController: self)
         tableView.handoff(to: reuser)
+    }
+}
+
+private extension Reuser {
+    
+    static func configure(withData data: DataProvider, viewController: UIViewController) -> Reuser {
+        let reuser = Reuser(dataProvider: data)
+        let instanceReuser = PersonReuser(viewController: viewController)
+        reuser.register(instanceReuser, for: Person.self)
+        return reuser
     }
 }

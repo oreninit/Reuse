@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  Person.swift
 //  Reuse_Example
 //
 //  Created by Oren F on 30/03/2018.
@@ -9,9 +9,15 @@
 import Foundation
 import Reuse
 
-struct User: Usable {
+enum Gender: String {
+    case female
+    case male
+}
+
+struct Person: Usable {
     let name: String
     let email: String
     let birthday: Date
     let country: String
+    let gender: Gender
 }
