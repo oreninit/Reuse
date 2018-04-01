@@ -12,7 +12,7 @@ import Reuse
 struct PersonReuser: InstanceReuser {
     
     var viewIdentifier: String { return "person.cell.id" }
-    var height: CGFloat { return 105.0 }
+    var height: CGFloat { return 80.0 }
     
     private var person: Person?
     private var formatter: DateFormatter
@@ -23,6 +23,7 @@ struct PersonReuser: InstanceReuser {
         formatter = DateFormatter()
         formatter.dateFormat = "EEEE, dd.MM.yyyy"
     }
+    
     mutating func setObject(_ object: Usable) {
         person = object as? Person
     }
@@ -34,12 +35,21 @@ struct PersonReuser: InstanceReuser {
         cell.profileImageView.tintColor = (person.gender == .male) ? .blue : .purple
         cell.nameLabel.text = person.name
         cell.emailLabel.text = person.email
-        cell.infoLabel.text = "Born in \(formatter.string(from: person.birthday)). From \(person.country)"
         return true
     }
     
     func select() {
-        print(person)
+        guard let person = person else { return }
+        let personVM = PersonViewModel(name: person.name,
+                                       email: person.email,
+                                       birthday: formatter.string(from: person.birthday),
+                                       country: person.country,
+                                       imageURL: "http://www.status77.in/wp-content/uploads/2015/07/14533584_1117069508383461_6955991993080086528_n.jpg",
+                                       placeholderImage: UIImage(named: person.gender.rawValue))
+        
+        guard let details = viewController?.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else { return }
+        details.viewModel = personVM
+        viewController?.navigationController?.pushViewController(details, animated: true)
     }
 }
 
