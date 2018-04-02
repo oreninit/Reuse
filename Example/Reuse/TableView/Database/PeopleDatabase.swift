@@ -25,45 +25,34 @@ class PeopleDatabase: Section, DataProvider {
     func canDeleteObject(at index: ObjectIndex) -> Bool {
         return true
     }
+    
+    func canMoveObject(at index: ObjectIndex) -> Bool {
+        return true
+    }
 }
 
 private extension PeopleDatabase {
     
     static func build() -> [Person] {
+        guard let path = Bundle.main.path(forResource: "people", ofType: "json") else { return [] }
+        let url = URL(fileURLWithPath: path)
+        guard let data = try? Data(contentsOf: url) else { return [] }
+        let json = try! JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
         
-        var people: [Person] = []
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .secondsSince1970
         
-        people.append(Person(name: "Jack Flack",
-                             email: "jflack@hoster.com",
-                             birthday: Date(timeIntervalSince1970: -10886400),
-                             country: "USA",
-                             gender: .male))
-        people.append(Person(name: "Gwyneth Caltrow",
-                             email: "shesaid@irule.com",
-                             birthday: Date(timeIntervalSince1970: 86400000),
-                             country: "USA",
-                             gender: .female))
-        people.append(Person(name: "Keira Brightley",
-                             email: "brightk@joy.co.uk",
-                             birthday: Date(timeIntervalSince1970: 480643200),
-                             country: "England",
-                             gender: .female))
-        people.append(Person(name: "Morgan Greeman",
-                             email: "mg@lama.com",
-                             birthday: Date(timeIntervalSince1970: -1028332800),
-                             country: "USA",
-                             gender: .male))
-        people.append(Person(name: "Kirsten Munst",
-                             email: "munter@kirst.co.de",
-                             birthday: Date(timeIntervalSince1970: 388972800),
-                             country: "Germany",
-                             gender: .female))
-        people.append(Person(name: "Adam Dandler",
-                             email: "adandler@gilmore.com",
-                             birthday: Date(timeIntervalSince1970: -104544000),
-                             country: "USA",
-                             gender: .male))
-
+        var people = [Person]()
+        
+        if let array = json["friends"] as? [Any] {
+            for element in array {
+                let objectData = try! JSONSerialization.data(withJSONObject: element, options: [])
+                if let object = try? decoder.decode(Person.self, from: objectData) {
+                    people.append(object)
+                }
+            }
+        }
+        
         return people
     }
 }

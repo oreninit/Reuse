@@ -9,11 +9,6 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Table View Controller-->
         <scene sceneID="9qh-78-bi1">
@@ -115,23 +110,50 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4J-oK-PjT">
-                                <rect key="frame" x="156.5" y="306" width="63" height="29"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <rect key="frame" x="163.5" y="306" width="48" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaI-Vn-CaP">
+                                <rect key="frame" x="30" y="345" width="42" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aw-dy-mD2">
+                                <rect key="frame" x="30" y="376" width="42" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8aa-la-rAr">
+                                <rect key="frame" x="169" y="140" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1aw-dy-mD2" secondAttribute="trailing" constant="15" id="4Iu-ze-QsD"/>
                             <constraint firstItem="Q3V-FQ-931" firstAttribute="top" secondItem="LhO-KV-jpl" secondAttribute="bottom" constant="10" id="5ZT-kk-J07"/>
+                            <constraint firstItem="1aw-dy-mD2" firstAttribute="leading" secondItem="YaI-Vn-CaP" secondAttribute="leading" id="GdP-5h-vjo"/>
+                            <constraint firstItem="8aa-la-rAr" firstAttribute="centerX" secondItem="Q3V-FQ-931" secondAttribute="centerX" id="JxK-2r-P1W"/>
                             <constraint firstItem="t4J-oK-PjT" firstAttribute="top" secondItem="Q3V-FQ-931" secondAttribute="bottom" constant="20" id="Sr8-zC-Ind"/>
+                            <constraint firstItem="YaI-Vn-CaP" firstAttribute="top" secondItem="t4J-oK-PjT" secondAttribute="bottom" constant="15" id="YJB-vD-cGF"/>
+                            <constraint firstItem="8aa-la-rAr" firstAttribute="centerY" secondItem="Q3V-FQ-931" secondAttribute="centerY" id="Zdr-yX-fFp"/>
                             <constraint firstItem="Q3V-FQ-931" firstAttribute="centerX" secondItem="RGP-eF-7yS" secondAttribute="centerX" id="dZY-l1-5t9"/>
+                            <constraint firstItem="1aw-dy-mD2" firstAttribute="top" secondItem="YaI-Vn-CaP" secondAttribute="bottom" constant="10" id="h2b-en-oa0"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YaI-Vn-CaP" secondAttribute="trailing" constant="15" id="j5q-j5-XaB"/>
                             <constraint firstItem="t4J-oK-PjT" firstAttribute="centerX" secondItem="Q3V-FQ-931" secondAttribute="centerX" id="nAy-WG-ZYx"/>
+                            <constraint firstItem="YaI-Vn-CaP" firstAttribute="leading" secondItem="RGP-eF-7yS" secondAttribute="leading" constant="30" id="x7S-38-PtJ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthdayLabel" destination="1aw-dy-mD2" id="Wcl-gr-KOy"/>
                         <outlet property="imageView" destination="Q3V-FQ-931" id="lnT-Hs-tYO"/>
                         <outlet property="nameLabel" destination="t4J-oK-PjT" id="A8C-ju-IQm"/>
+                        <outlet property="originLabel" destination="YaI-Vn-CaP" id="3pE-yC-g9l"/>
+                        <outlet property="spinner" destination="8aa-la-rAr" id="o8T-Vq-iiS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKa-W1-WGk" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,6 +18,7 @@
 		EAD23E64206F7C8E00596E89 /* PeopleDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E63206F7C8E00596E89 /* PeopleDatabase.swift */; };
 		EAD23E66206F9B5600596E89 /* PersonReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E65206F9B5600596E89 /* PersonReuser.swift */; };
 		EAD23E682070EB5D00596E89 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E672070EB5D00596E89 /* PersonViewModel.swift */; };
+		EAD23E6A20721E3300596E89 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = EAD23E6920721E3300596E89 /* people.json */; };
 		EAECAA95206E0E6400746815 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECAA94206E0E6400746815 /* TableViewController.swift */; };
 		EAECAA97206E0E7000746815 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECAA96206E0E7000746815 /* DetailsViewController.swift */; };
 		EAECAA9B206E0F9A00746815 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECAA9A206E0F9A00746815 /* Person.swift */; };
@@ -54,6 +55,7 @@
 		EAD23E63206F7C8E00596E89 /* PeopleDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDatabase.swift; sourceTree = "<group>"; };
 		EAD23E65206F9B5600596E89 /* PersonReuser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonReuser.swift; sourceTree = "<group>"; };
 		EAD23E672070EB5D00596E89 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		EAD23E6920721E3300596E89 /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
 		EAECAA94206E0E6400746815 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EAECAA96206E0E7000746815 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		EAECAA9A206E0F9A00746815 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		EAD23E62206F7C7200596E89 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				EAD23E6920721E3300596E89 /* people.json */,
 				EAD23E63206F7C8E00596E89 /* PeopleDatabase.swift */,
 			);
 			path = Database;
@@ -298,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD23E6A20721E3300596E89 /* people.json in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,

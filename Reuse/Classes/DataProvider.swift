@@ -44,6 +44,14 @@ public protocol DataProvider: class {
 // MARK: - Default values
 public extension DataProvider {
     
+    func object(at indexPath: IndexPath) -> Usable {
+        return sections[indexPath.section].objects[indexPath.item]
+    }
+    
+    func object(at index: ObjectIndex) -> Usable {
+        return object(at: index.indexPath)
+    }
+
     func canDeleteObject(at index: ObjectIndex) -> Bool {
         return false
     }

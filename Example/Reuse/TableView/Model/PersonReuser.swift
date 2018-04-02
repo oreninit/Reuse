@@ -34,7 +34,7 @@ struct PersonReuser: InstanceReuser {
         cell.profileImageView.image = UIImage(named: person.gender.rawValue)
         cell.profileImageView.tintColor = (person.gender == .male) ? .blue : .purple
         cell.nameLabel.text = person.name
-        cell.emailLabel.text = person.email
+        cell.emailLabel.text = person.country
         return true
     }
     
@@ -44,7 +44,7 @@ struct PersonReuser: InstanceReuser {
                                        email: person.email,
                                        birthday: formatter.string(from: person.birthday),
                                        country: person.country,
-                                       imageURL: "http://www.status77.in/wp-content/uploads/2015/07/14533584_1117069508383461_6955991993080086528_n.jpg",
+                                       imageURL: person.image,
                                        placeholderImage: UIImage(named: person.gender.rawValue))
         
         guard let details = viewController?.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else { return }

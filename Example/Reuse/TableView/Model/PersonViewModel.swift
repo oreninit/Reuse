@@ -16,6 +16,14 @@ struct PersonViewModel {
     let imageURL: String
     let placeholderImage: UIImage?
     
+    func formattedBirthday() -> String {
+        return "Born on: \(birthday)"
+    }
+    
+    func formattedCountry() -> String {
+        return "From: \(country)"
+    }
+    
     func loadImage(_ completion: @escaping ((UIImage?) -> ())) {
         guard let url = URL(string: imageURL) else { completion(placeholderImage); return }
         

@@ -21,8 +21,14 @@ class TableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Friends list"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editingToggle))
         reuser = Reuser.configure(withData: data, viewController: self)
-        tableView.handoff(to: reuser)
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+    
+    @objc private func editingToggle() {
+        tableView.isEditing = !tableView.isEditing
     }
 }
 
@@ -34,4 +40,53 @@ private extension Reuser {
         reuser.register(instanceReuser, for: Person.self)
         return reuser
     }
+}
+
+extension TableViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return reuser.numberOfSections()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return reuser.numberOfItems(in: section)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let instance = reuser[indexPath]
+        guard instance.isValidReuser else {
+            assert(false, "InstanceReuser invalid")
+        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: instance.viewIdentifier, for: indexPath)
+        instance.configure(cell)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        reuser[indexPath].select()
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return reuser[indexPath].height
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return reuser[indexPath].canDelete()
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else { return }
+        reuser[indexPath].delete()
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return reuser[indexPath].canBeMoved()
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        reuser[sourceIndexPath].move(to: destinationIndexPath)
+    }
+
 }

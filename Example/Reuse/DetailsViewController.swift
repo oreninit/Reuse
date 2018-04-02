@@ -14,14 +14,27 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var originLabel: UILabel!
+    @IBOutlet weak var birthdayLabel: UILabel!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guard viewModel != nil else { return }
+        setupView(from: viewModel)
+    }
+    
+    private func setupView(from viewModel: PersonViewModel) {
         navigationItem.title = viewModel.name
         nameLabel.text = viewModel.email
+        originLabel.text = viewModel.formattedCountry()
+        birthdayLabel.text = viewModel.formattedBirthday()
         imageView.image = viewModel.placeholderImage
+        
+        spinner.startAnimating()
         viewModel.loadImage { [weak self] (image) in
+            self?.spinner.stopAnimating()
             self?.imageView.image = image
         }
     }

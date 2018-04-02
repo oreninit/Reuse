@@ -9,15 +9,16 @@
 import Foundation
 import Reuse
 
-enum Gender: String {
+enum Gender: String, Codable {
     case female
     case male
 }
 
-struct Person: Usable {
+struct Person: Usable, Codable {
     let name: String
     let email: String
     let birthday: Date
     let country: String
     let gender: Gender
+    let image: String
 }
