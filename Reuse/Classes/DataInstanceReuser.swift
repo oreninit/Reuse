@@ -23,6 +23,7 @@ internal enum DataAction {
     }
 }
 
+/// Internal InstanceReuser which wraps every reuser and attaches the database for actions. Used be `Reuser`
 internal struct DataInstanceReuser: InstanceReuser {
     
     // MARK:- InstanceReuser

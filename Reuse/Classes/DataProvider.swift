@@ -15,7 +15,6 @@ public protocol Section: class {
     var objects: [Usable] { get set }
 }
 
-
 /// A protocol describing a data source.
 /// When connecting a `DataProvider` to the `Reuser`, this instance will manage the logic and the `Reuser` will call these methods.
 /// That enables maximum flexibility to control application logic

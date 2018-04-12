@@ -30,12 +30,16 @@ struct PersonViewModel {
         DispatchQueue.global().async {
             let data = try? Data(contentsOf: url)
             guard let d = data, let image = UIImage(data: d) else {
-                completion(self.placeholderImage)
+                self.finish(with: self.placeholderImage, completion: completion)
                 return
             }
-            DispatchQueue.main.async {
-                completion(image)
-            }
+            self.finish(with: image, completion: completion)
+        }
+    }
+    
+    private func finish(with image: UIImage?, completion: @escaping ((UIImage?) -> ())) {
+        DispatchQueue.main.async {
+            completion(image)
         }
     }
 }

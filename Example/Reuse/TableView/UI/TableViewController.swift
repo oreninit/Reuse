@@ -15,7 +15,6 @@ class TableViewController: UIViewController {
     
     private var reuser: Reuser!
     
-    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {

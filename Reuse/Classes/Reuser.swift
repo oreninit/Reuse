@@ -7,6 +7,21 @@
 
 import UIKit
 
+internal enum ReuserError: Error, LocalizedError {
+    case indexOutOfBounds(IndexPath)
+    case reuserMissing(String)
+    
+    var errorDescription: String? {
+        switch self {
+        case .indexOutOfBounds(let ip):
+            return "Reuser Error: index out bounds (\(ip))"
+        case .reuserMissing(let type):
+            return "Reuser Error: no `InstanceReuser` assigned for \(type)"
+        }
+    }
+}
+
+
 public class Reuser: NSObject {
     
     internal var instances: [String : InstanceReuser] = [:]
@@ -23,19 +38,26 @@ public class Reuser: NSObject {
     public func register(_ instanceReuser: InstanceReuser, for object: Usable.Type) {
         instances[object.name] = instanceReuser
     }
+    
     public func setTableView(_ tableView: UITableView?) {
         self.tableView = tableView
     }
 
     // Get InstanceReuser
     public subscript(indexPath: IndexPath) -> InstanceReuser {
-        return on(indexPath: indexPath)
+        do {
+            let reuser = try on(indexPath: indexPath)
+            return reuser
+        }
+        catch {
+            assert(false, error.localizedDescription)
+        }
     }
     
-    public func on(indexPath: IndexPath) -> InstanceReuser {
-        let object = getObject(at: indexPath)
+    public func on(indexPath: IndexPath) throws -> InstanceReuser {
+        let object = try getObject(at: indexPath)
         guard let instance = instances[object.name] else {
-            return NullInstanceReuser()
+            throw ReuserError.reuserMissing(object.name)
         }
         var dataReuser = DataInstanceReuser(data: dataProvider, indexPath: indexPath, reuser: instance) { [weak self]
             action in
@@ -63,9 +85,9 @@ public class Reuser: NSObject {
     }
     
     // MARK:- Private
-    internal func getObject(at indexPath: IndexPath) -> Usable {
+    internal func getObject(at indexPath: IndexPath) throws -> Usable {
         guard dataProvider.isInBounds(indexPath) else {
-            assert(false, "IndexPath \(indexPath) out of bounds of current data source")
+            throw ReuserError.indexOutOfBounds(indexPath)
         }
         return dataProvider.sections[indexPath.section].objects[indexPath.item]
     }

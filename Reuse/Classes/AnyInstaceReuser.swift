@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct AnyInstanceReuserObj<R: Reusable, O: Usable>: InstanceReuser {
+/// A generic InstanceRuser where each instance defines it's own `Reusable` and `Usable`
+public struct AnyInstanceReuser<R: Reusable, O: Usable>: InstanceReuser {
     
     public var viewIdentifier: String { return reuseId }
     public var height: CGFloat { return fixedHeight }
