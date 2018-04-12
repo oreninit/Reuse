@@ -11,7 +11,8 @@ import Reuse
 
 class TableViewController: UIViewController {
 
-    lazy var data: PeopleDatabase = PeopleDatabase()
+    var navigator: Navigator?
+    var data: PeopleDatabase!
     
     private var reuser: Reuser!
     
@@ -19,25 +20,22 @@ class TableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.title = "Friends list"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editingToggle))
-        reuser = Reuser.configure(withData: data, viewController: self)
-        tableView.dataSource = self
-        tableView.delegate = self
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editingToggle)),
+            UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.bookmarks, target: self, action: #selector(showCollection))
+            ]
+        reuser = Reuser.configure(withData: data, navigator: navigator)
+        tableView.handoff(to: reuser)
     }
     
     @objc private func editingToggle() {
         tableView.isEditing = !tableView.isEditing
     }
-}
-
-private extension Reuser {
     
-    static func configure(withData data: DataProvider, viewController: UIViewController) -> Reuser {
-        let reuser = Reuser(dataProvider: data)
-        let instanceReuser = PersonReuser(viewController: viewController)
-        reuser.register(instanceReuser, for: Person.self)
-        return reuser
+    @objc private func showCollection() {
+        navigator?.showCollection(of: data)
     }
 }
 

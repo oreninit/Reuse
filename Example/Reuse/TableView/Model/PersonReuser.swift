@@ -13,13 +13,14 @@ struct PersonReuser: InstanceReuser {
     
     var viewIdentifier: String { return "person.cell.id" }
     var height: CGFloat { return 80.0 }
+    var size: CGSize { return CGSize(width: 150.0, height: 150.0) }
     
     private var person: Person?
     private var formatter: DateFormatter
-    private weak var viewController: UIViewController?
+    private var navigator: Navigator?
     
-    init(viewController: UIViewController) {
-        self.viewController = viewController
+    init(navigator: Navigator?) {
+        self.navigator = navigator
         formatter = DateFormatter()
         formatter.dateFormat = "EEEE, dd.MM.yyyy"
     }
@@ -29,12 +30,12 @@ struct PersonReuser: InstanceReuser {
     }
  
     func configure(_ reusable: Reusable) -> Bool {
-        guard let person = person, let cell = reusable as? PersonTableViewCell else { return false }
+        guard let person = person, let cell = reusable as? PersonCell else { return false }
         
-        cell.profileImageView.image = UIImage(named: person.gender.rawValue)
-        cell.profileImageView.tintColor = (person.gender == .male) ? .blue : .purple
-        cell.nameLabel.text = person.name
-        cell.emailLabel.text = person.country
+        cell.profileImageView?.image = UIImage(named: person.gender.rawValue)
+        cell.profileImageView?.tintColor = (person.gender == .male) ? .blue : .purple
+        cell.nameLabel?.text = person.name
+        cell.emailLabel?.text = person.country
         return true
     }
     
@@ -46,10 +47,7 @@ struct PersonReuser: InstanceReuser {
                                        country: person.country,
                                        imageURL: person.image,
                                        placeholderImage: UIImage(named: person.gender.rawValue))
-        
-        guard let details = viewController?.storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else { return }
-        details.viewModel = personVM
-        viewController?.navigationController?.pushViewController(details, animated: true)
+        navigator?.showDetails(of: personVM)
     }
 }
 
