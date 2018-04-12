@@ -21,13 +21,17 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     override func viewDidLoad() {
         
         reuser = Reuser.configure(withData: data, navigator: navigator)
-        
         super.viewDidLoad()
 
         navigationItem.title = "Friends collection"
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.bookmarks, target: self, action: #selector(showTable))
         ]
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView?.handoff(to: reuser)
     }
     
     @objc private func showTable() {

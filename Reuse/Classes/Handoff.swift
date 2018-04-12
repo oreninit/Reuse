@@ -7,15 +7,50 @@
 
 import UIKit
 
-
 public extension UITableView {
     
     /// Pass handling `UITableView` management (dataSource and delegate) to `Reuser`
     /// Helps provide `default` implementation, driven by registered instance reusers
     /// - Parameter reuser: A `Reuser` instance which `knows` how to populate and respond to the table view
     func handoff(to reuser: Reuser) {
-        reuser.tableView = self
+        reuser.listView = self
         delegate = reuser
         dataSource = reuser
+        reloadData()
     }
+}
+
+public extension UICollectionView {
+    
+    func handoff(to reuser: Reuser) {
+        reuser.listView = self
+        delegate = reuser
+        dataSource = reuser
+        reloadData()
+    }
+}
+
+
+
+internal protocol ListView: class {
+    
+    // Common
+    func reloadData()
+    
+    // UITableView
+    func deleteRows(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation)
+    func moveRow(at indexPath: IndexPath, to newIndexPath: IndexPath)
+}
+
+extension ListView {
+    func deleteRows(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation) {}
+    func moveRow(at indexPath: IndexPath, to newIndexPath: IndexPath) {}
+}
+
+extension UITableView: ListView {
+    
+}
+
+extension UICollectionView: ListView {
+    
 }

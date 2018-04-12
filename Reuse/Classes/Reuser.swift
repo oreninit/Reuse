@@ -26,7 +26,8 @@ public class Reuser: NSObject {
     
     internal var instances: [String : InstanceReuser] = [:]
     internal var dataProvider: DataProvider
-    internal weak var tableView: UITableView?
+    
+    internal weak var listView: ListView?
     
     public init(dataProvider: DataProvider) {
         self.dataProvider = dataProvider
@@ -40,7 +41,15 @@ public class Reuser: NSObject {
     }
     
     public func setTableView(_ tableView: UITableView?) {
-        self.tableView = tableView
+        self.listView = tableView
+    }
+    
+    public func setCollectionView(_ collectionView: UICollectionView?) {
+        self.listView = collectionView
+    }
+    
+    public func reload() {
+        listView?.reloadData()
     }
 
     // Get InstanceReuser
@@ -64,9 +73,9 @@ public class Reuser: NSObject {
             
             switch action {
             case .delete(let ip):
-                self?.tableView?.deleteRows(at: [ip], with: .automatic)
+                self?.listView?.deleteRows(at: [ip], with: .automatic)
             case .move(let from, let to):
-                self?.tableView?.moveRow(at: from, to: to)
+                self?.listView?.moveRow(at: from, to: to)
             default: break
             }
         }

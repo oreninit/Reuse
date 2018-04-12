@@ -117,7 +117,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				EAD23E60206F7C3600596E89 /* TableView */,
+				EAECAA99206E0F8600746815 /* Model */,
+				EAD23E62206F7C7200596E89 /* Database */,
+				EAD23E61206F7C6C00596E89 /* UI */,
 				EAECAA96206E0E7000746815 /* DetailsViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -188,16 +190,6 @@
 				EA977019207F366A00B8228C /* Navigator.swift */,
 			);
 			path = Navigator;
-			sourceTree = "<group>";
-		};
-		EAD23E60206F7C3600596E89 /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				EAECAA99206E0F8600746815 /* Model */,
-				EAD23E62206F7C7200596E89 /* Database */,
-				EAD23E61206F7C6C00596E89 /* UI */,
-			);
-			path = TableView;
 			sourceTree = "<group>";
 		};
 		EAD23E61206F7C6C00596E89 /* UI */ = {

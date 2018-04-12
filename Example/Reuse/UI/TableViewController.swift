@@ -27,6 +27,10 @@ class TableViewController: UIViewController {
             UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.bookmarks, target: self, action: #selector(showCollection))
             ]
         reuser = Reuser.configure(withData: data, navigator: navigator)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tableView.handoff(to: reuser)
     }
     
