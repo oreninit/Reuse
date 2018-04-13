@@ -1,0 +1,22 @@
+{
+    "ads" : [
+             {
+                 "title" : "SPECIAL OFFER",
+                 "content" : "Get your suitcase ready!!!\rA holiday in Europe for only 99£.\r3 nights (breakfast included).\rFew tickets left!",
+                 "color" : {
+                     "r" : 0.4,
+                     "g" : 0.7,
+                     "b" : 0.95
+                    }
+             },
+             {
+             "title" : "TODAY ONLY!",
+             "content" : "All the T-Shirts you could carry!\rBring your basket and bag and take as much as you can. This is a one day event. First come, first serve!",
+             "color" : {
+             "r" : 0.27,
+             "g" : 0.55,
+             "b" : 0.32
+             }
+             }
+     ]
+}

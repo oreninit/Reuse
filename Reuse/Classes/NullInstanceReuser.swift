@@ -8,7 +8,10 @@
 import CoreGraphics
 
 internal struct NullInstanceReuser: InstanceReuser {
-    var viewIdentifier: String { return "" }
+    
+    static var id: String { return "com.reuser.null.instance" }
+    
+    var viewIdentifier: String { return NullInstanceReuser.id }
     var height: CGFloat { return 0 }
     var size: CGSize { return .zero }
     func setObject(_ object: Usable) {}

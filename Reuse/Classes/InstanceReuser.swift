@@ -62,7 +62,7 @@ public protocol InstanceReuser {
 public extension InstanceReuser {
     var height: CGFloat { return UITableViewAutomaticDimension }
     var size: CGSize { return .zero }
-    var isValidReuser: Bool { return viewIdentifier != "" }
+    var isValidReuser: Bool { return viewIdentifier != NullInstanceReuser.id }
     func select() {}
     func canDelete() -> Bool { return false }
     func delete() {}

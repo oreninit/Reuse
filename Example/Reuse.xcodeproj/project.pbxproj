@@ -14,10 +14,16 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		EA6B2DCF20808E5500080A3C /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B2DCE20808E5500080A3C /* AdTableViewCell.swift */; };
+		EA6B2DD12080DEE600080A3C /* AdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B2DD02080DEE600080A3C /* AdCollectionViewCell.swift */; };
+		EA6B2DD32080E01E00080A3C /* AdReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B2DD22080E01E00080A3C /* AdReuser.swift */; };
 		EA977015207F347C00B8228C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA977014207F347C00B8228C /* CollectionViewController.swift */; };
 		EA977017207F34BC00B8228C /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA977016207F34BC00B8228C /* PersonCollectionViewCell.swift */; };
 		EA97701A207F366A00B8228C /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA977019207F366A00B8228C /* Navigator.swift */; };
 		EA97701C207F39FC00B8228C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA97701B207F39FC00B8228C /* Config.swift */; };
+		EABD7179208085710091F45C /* ads.json in Resources */ = {isa = PBXBuildFile; fileRef = EABD7178208085710091F45C /* ads.json */; };
+		EABD717B208087E30091F45C /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABD717A208087E30091F45C /* Ad.swift */; };
+		EABD717D208088260091F45C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABD717C208088260091F45C /* Color.swift */; };
 		EAD23E5F206F7C2F00596E89 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E5E206F7C2F00596E89 /* PersonTableViewCell.swift */; };
 		EAD23E64206F7C8E00596E89 /* PeopleDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E63206F7C8E00596E89 /* PeopleDatabase.swift */; };
 		EAD23E66206F9B5600596E89 /* PersonReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD23E65206F9B5600596E89 /* PersonReuser.swift */; };
@@ -55,10 +61,16 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		87F06334AC12B311A569750D /* Pods-Reuse_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reuse_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reuse_Example/Pods-Reuse_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8D079F97CEBD30E31FDCC82B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EA6B2DCE20808E5500080A3C /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
+		EA6B2DD02080DEE600080A3C /* AdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA6B2DD22080E01E00080A3C /* AdReuser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdReuser.swift; sourceTree = "<group>"; };
 		EA977014207F347C00B8228C /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		EA977016207F34BC00B8228C /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 		EA977019207F366A00B8228C /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		EA97701B207F39FC00B8228C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		EABD7178208085710091F45C /* ads.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ads.json; sourceTree = "<group>"; };
+		EABD717A208087E30091F45C /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		EABD717C208088260091F45C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		EAD23E5E206F7C2F00596E89 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		EAD23E63206F7C8E00596E89 /* PeopleDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDatabase.swift; sourceTree = "<group>"; };
 		EAD23E65206F9B5600596E89 /* PersonReuser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonReuser.swift; sourceTree = "<group>"; };
@@ -198,8 +210,10 @@
 				EA977018207F365C00B8228C /* Navigator */,
 				EAECAA94206E0E6400746815 /* TableViewController.swift */,
 				EAD23E5E206F7C2F00596E89 /* PersonTableViewCell.swift */,
+				EA6B2DCE20808E5500080A3C /* AdTableViewCell.swift */,
 				EA977014207F347C00B8228C /* CollectionViewController.swift */,
 				EA977016207F34BC00B8228C /* PersonCollectionViewCell.swift */,
+				EA6B2DD02080DEE600080A3C /* AdCollectionViewCell.swift */,
 				EA97701B207F39FC00B8228C /* Config.swift */,
 			);
 			path = UI;
@@ -209,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD23E6920721E3300596E89 /* people.json */,
+				EABD7178208085710091F45C /* ads.json */,
 				EAD23E63206F7C8E00596E89 /* PeopleDatabase.swift */,
 			);
 			path = Database;
@@ -218,8 +233,11 @@
 			isa = PBXGroup;
 			children = (
 				EAECAA9A206E0F9A00746815 /* Person.swift */,
+				EABD717A208087E30091F45C /* Ad.swift */,
 				EAD23E672070EB5D00596E89 /* PersonViewModel.swift */,
 				EAD23E65206F9B5600596E89 /* PersonReuser.swift */,
+				EA6B2DD22080E01E00080A3C /* AdReuser.swift */,
+				EABD717C208088260091F45C /* Color.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,6 +334,7 @@
 				EAD23E6A20721E3300596E89 /* people.json in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				EABD7179208085710091F45C /* ads.json in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,16 +447,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA977015207F347C00B8228C /* CollectionViewController.swift in Sources */,
+				EA6B2DD12080DEE600080A3C /* AdCollectionViewCell.swift in Sources */,
 				EAECAA9B206E0F9A00746815 /* Person.swift in Sources */,
 				EAECAA95206E0E6400746815 /* TableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				EAD23E682070EB5D00596E89 /* PersonViewModel.swift in Sources */,
 				EA97701C207F39FC00B8228C /* Config.swift in Sources */,
 				EA97701A207F366A00B8228C /* Navigator.swift in Sources */,
+				EA6B2DCF20808E5500080A3C /* AdTableViewCell.swift in Sources */,
 				EAECAA97206E0E7000746815 /* DetailsViewController.swift in Sources */,
 				EAD23E5F206F7C2F00596E89 /* PersonTableViewCell.swift in Sources */,
+				EABD717D208088260091F45C /* Color.swift in Sources */,
 				EAD23E64206F7C8E00596E89 /* PeopleDatabase.swift in Sources */,
+				EA6B2DD32080E01E00080A3C /* AdReuser.swift in Sources */,
 				EAD23E66206F9B5600596E89 /* PersonReuser.swift in Sources */,
+				EABD717B208087E30091F45C /* Ad.swift in Sources */,
 				EA977017207F34BC00B8228C /* PersonCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

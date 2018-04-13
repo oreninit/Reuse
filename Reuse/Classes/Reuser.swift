@@ -35,11 +35,21 @@ public class Reuser: NSObject {
     }
     
     // MARK:- Public
-    // Attach elements
+    
+    /// Register an instance of `InstanceReuser` type to a specific `Usable` object
+    ///
+    /// - Parameters:
+    ///   - instanceReuser: An object which conforms to `InstanceReuser`
+    ///   - object: An object that could be used to configure a `Reusable`
     public func register(_ instanceReuser: InstanceReuser, for object: Usable.Type) {
         instances[object.name] = instanceReuser
     }
     
+    
+    /// Pass UITableView reference to `Reuser`.
+    /// Used to update UI when an action is performed (i.e delete, move, reload)
+    ///
+    /// - Parameter tableView: A UITableView instance
     public func setTableView(_ tableView: UITableView?) {
         self.listView = tableView
     }
