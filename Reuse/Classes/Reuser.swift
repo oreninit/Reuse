@@ -71,6 +71,7 @@ public class Reuser: NSObject {
         catch {
             assert(false, error.localizedDescription)
         }
+        return NullInstanceReuser()
     }
     
     public func on(indexPath: IndexPath) throws -> InstanceReuser {

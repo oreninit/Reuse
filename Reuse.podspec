@@ -9,34 +9,21 @@
 Pod::Spec.new do |s|
   s.name             = 'Reuse'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Reuse.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Reuse is an easy to use library which helps tackle the reptitive task of populating UITableView/UICollectionView simply and elegantly'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+Most apps use some sort of a list UI, whether it be a table view or a collection view.
+I often find myself repeating similar cell configuration code without conistency. After numerous assignments in `cellForRow`, countless `CellViewModel` and endless `configure(cell:with:)`, I decided to come up with a single, clean solution that will allow me to have a clear, simple configuration between a cell and an object that populates it without making them depend on each other.
+    I wanted it to be fast, light on memory, minimize boilerplate and, if possible, ask it to take care of my list updates, inteaction and linking to the database.
+I present, Reuse.
+DESC
 
-  s.homepage         = 'https://github.com/OreniOS/Reuse'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/oreninit/Reuse'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'OreniOS' => 'orentf@gmail.com' }
-  s.source           = { :git => 'https://github.com/OreniOS/Reuse.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
+  s.author           = { 'Oreninit' => 'oreninit@gmail.com' }
+  s.source           = { :git => 'https://github.com/oreninit/Reuse.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/oreninit'
+  s.ios.deployment_target = '9.3'
   s.source_files = 'Reuse/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Reuse' => ['Reuse/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
 end

@@ -58,6 +58,7 @@ extension Reuser: UITableViewDataSource, UITableViewDelegate {
         catch {
             assert(false, error.localizedDescription)
         }
+        return NullInstanceReuser()
     }
 }
 
