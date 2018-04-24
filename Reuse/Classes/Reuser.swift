@@ -25,9 +25,13 @@ internal enum ReuserError: Error, LocalizedError {
 public class Reuser: NSObject {
     
     internal var instances: [String : InstanceReuser] = [:]
+    internal var headerInstances: [String : HeaderReuser] = [:]
+    internal var headers: [Int : ReusableHeader?] = [:]
     internal var dataProvider: DataProvider
     
     internal weak var listView: ListView?
+    
+    public var requiresHeaderUpdateOnDataChange: Bool = true
     
     public init(dataProvider: DataProvider) {
         self.dataProvider = dataProvider
@@ -41,10 +45,18 @@ public class Reuser: NSObject {
     /// - Parameters:
     ///   - instanceReuser: An object which conforms to `InstanceReuser`
     ///   - object: An object that could be used to configure a `Reusable`
-    public func register(_ instanceReuser: InstanceReuser, for object: Usable.Type) {
+    public func register(_ instanceReuser: InstanceReuser, forObject object: Usable.Type) {
         instances[object.name] = instanceReuser
     }
     
+    /// Register an instance of `InstanceReuser` type to a specific `Usable` object
+    ///
+    /// - Parameters:
+    ///   - instanceReuser: An object which conforms to `InstanceReuser`
+    ///   - header: An object that could be used to configure a `Reusable`
+    public func register(_ instanceReuser: HeaderReuser, forHeader header: Usable.Type) {
+        headerInstances[header.name] = instanceReuser
+    }
     
     /// Pass UITableView reference to `Reuser`.
     /// Used to update UI when an action is performed (i.e delete, move, reload)
@@ -89,11 +101,20 @@ public class Reuser: NSObject {
                 self?.listView?.moveRow(at: from, to: to)
             default: break
             }
+            
+            if let headerShouldUpdate = self?.requiresHeaderUpdateOnDataChange, headerShouldUpdate {
+                self?.reloadHeader(at: indexPath.section)
+            }
         }
         dataReuser.setObject(object)
         return dataReuser
     }
 
+    public func headerAt(index: Int) -> HeaderReuser? {
+        guard let instance = getHeader(at: index) else { return nil }
+        return instance
+    }
+    
     // TableData
     
     public func numberOfSections() -> Int {
@@ -110,6 +131,51 @@ public class Reuser: NSObject {
             throw ReuserError.indexOutOfBounds(indexPath)
         }
         return dataProvider.sections[indexPath.section].objects[indexPath.item]
+    }
+    
+    internal func getHeaderObject(at index: Int) -> Usable? {
+        guard index < dataProvider.sections.count else { return nil }
+        return dataProvider.sections[index].headerObject
+    }
+    
+    internal func getInstance(on indexPath: IndexPath) -> InstanceReuser {
+        do {
+            let instance = try on(indexPath: indexPath)
+            return instance
+        }
+        catch {
+            assert(false, error.localizedDescription)
+        }
+        return NullInstanceReuser()
+    }
+
+    internal func getHeader(at index: Int) -> HeaderReuser? {
+        guard let object = dataProvider.sections[index].headerObject,
+            var instance = headerInstances[object.name] else { return nil }
+        instance.setObject(object)
+        return instance
+    }
+
+    @discardableResult
+    internal func getHeaderView(at index: Int) -> UIView? {
+        guard let object = dataProvider.sections[index].headerObject,
+            var instance = headerInstances[object.name] else {
+            headers[index] = nil
+            return nil
+        }
+        var reusable: ReusableHeader!
+        if let existing = headers[index] {
+            reusable = existing
+        } else {
+            reusable = instance.reusable(for: index)
+            headers[index] = reusable
+        }
+        instance.setObject(object)
+        return instance.configure(reusable)
+    }
+    
+    internal func reloadHeader(at index: Int) {
+        getHeaderView(at: index)
     }
 }
 

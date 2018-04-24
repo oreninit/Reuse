@@ -11,6 +11,8 @@ import Foundation
 /// Used to divide `UITableView` and `UICollectionView` display into sections visually.
 public protocol Section: class {
     
+    /// An object to configure header
+    var headerObject: Usable? { get }
     /// An array of objects for current section
     var objects: [Usable] { get set }
 }

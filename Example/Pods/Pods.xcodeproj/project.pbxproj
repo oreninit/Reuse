@@ -7,24 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07A82DC8260879D1C1AD3226FE2D0138 /* DataInstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA02ED1BAEF80F266D7CE8F6F4527C1B /* DataInstanceReuser.swift */; };
-		1496BCDB1D05B9A7FB453652C6BE78F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		17CCC3771B001D541A23077F51A37CD8 /* AnyInstaceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB9D675DA40E954B3D11BAC03921A7 /* AnyInstaceReuser.swift */; };
+		0AB92D54A187BF69ABB635B3C1688A44 /* UITableViewReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67E3EFD80E6AFF00296AD508724CF9 /* UITableViewReuser.swift */; };
+		0CDA9BF09EE1F10AC1E9A9EA8F4DCA86 /* AnyInstaceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D310D6ED4F25FBB7E1C6EF306BA42BE /* AnyInstaceReuser.swift */; };
+		1496BCDB1D05B9A7FB453652C6BE78F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		176A5027A6D873E344C3CCE20D3C2C9D /* NullInstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F6D71840C51D36C7BB42995342C81E /* NullInstanceReuser.swift */; };
 		2176FC151D544482E3C8985C97DAD9D2 /* Pods-Reuse_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D7156E0B40F8138FAA3F8C13F2526D /* Pods-Reuse_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3373278119982D1416D60848093C6D08 /* UITableViewReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368592A3DCE88453E7B8BA979C2CDD18 /* UITableViewReuser.swift */; };
-		379AB9B99D0EC00C4BC4594CA0A39448 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80D00C3FD3C197CF7A6880D64C12025 /* DataProvider.swift */; };
-		40F2F5919CF946E39740EB63C098451F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		49A0C127AFCD3DD0D6CF55536525BCD6 /* Reuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A2D75F729FA34ADA570E44A3E2E9F8 /* Reuser.swift */; };
-		51CAE5C926FFD00FB84E6FC781C1309B /* UICollectionViewReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607CEDD6AD649787A98B1E08C742D0E1 /* UICollectionViewReuser.swift */; };
+		29CB50262D0629F144FCAF8ACC9D0580 /* Reuse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D384265A0474349B904ED188B303BD5 /* Reuse-dummy.m */; };
+		5363B3C3C56EB64C9A268B7147695059 /* Usable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1052ED4F6F9B67D0B88B9A946F6F9 /* Usable.swift */; };
 		59D849E8064E0494750607F603ED57D6 /* Pods-Reuse_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBFC466346C68BC951CD152477BDAD4 /* Pods-Reuse_Tests-dummy.m */; };
-		671D6C49AFFFB512BE9C3A635EBEB39E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE28386743AB94B7E117EB87E4FD4F04 /* Reusable.swift */; };
-		67F53526847B943EF42E403F4326A18A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7A1F249E8B6E656BB0A55C37A48AC499 /* InstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBC967D72224F498D856DAC6059C71 /* InstanceReuser.swift */; };
-		80035C2BEB20BD25078DE0DAD84822E3 /* Handoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32568FCECBCE50AF7533ACDAA6C31CE5 /* Handoff.swift */; };
-		896CDE5DD5BF64934EEB26494BED9AD6 /* Usable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11133C4B2CDF9E2C4E5EB41825B9EF9 /* Usable.swift */; };
+		67F53526847B943EF42E403F4326A18A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		6DFCA4AB3039B79E215853CF6D695447 /* Handoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48D3D722E3FCE1E3B160648D22F1524 /* Handoff.swift */; };
+		6ED8063C81F7E479964E6CDD7402579E /* HeaderReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6059F6D8960EA89FA3EBAE9479B71B33 /* HeaderReuser.swift */; };
+		6F5E604EA3ABDBE7B57223FD812AABC6 /* DataInstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2D1C798C049C41E8AD2BDA89BEE28 /* DataInstanceReuser.swift */; };
+		7142D00D86A42CDE73C1B1AC32557AC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		8A3FB5338F562D970188E1F0786CB44F /* Pods-Reuse_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 496F3994AB5A53465209180C7DD3C4D9 /* Pods-Reuse_Example-dummy.m */; };
-		B07E7F814B64CBC006A5D3BEF320BD9C /* Reuse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D384265A0474349B904ED188B303BD5 /* Reuse-dummy.m */; };
-		D14EF207BCB6D1A553CB1E8A2A992B43 /* NullInstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AEBB7AA4EE7F48C756767BA3E688FE /* NullInstanceReuser.swift */; };
+		97AEB60E5361FED05C920753D72D060A /* Reuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD6CCEB6FAF496CB4F1FDEFFFB6ED47 /* Reuser.swift */; };
+		9C201FFE970A079018EC25AD9F7FA5D2 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3017B3F4684D7EA181911A8F6D25A5D2 /* Reusable.swift */; };
+		AD0A4AA02300CB62D29097BAC89F1758 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3915857AE23A2C4DADDAFFC348D3169 /* DataProvider.swift */; };
+		C13508315F50039107C6B6874E3D36E7 /* AnyHeaderReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3B1A66B7E2874C4B920EDC924A177 /* AnyHeaderReuser.swift */; };
+		E89B0EAF678B310FEFCB56619D319A43 /* InstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF4C97C423AF59E9C851AABAFA564E /* InstanceReuser.swift */; };
+		E9CBF1D702FE72D4FC5C13ECF6B4D907 /* UICollectionViewReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBA6CD060B80DB7BB4B6332596C5F0 /* UICollectionViewReuser.swift */; };
+		F2627F2CF5628E076F176E240DA8A7BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
 		F526FD6FF2074D10E8BF08EF898C0B84 /* Reuse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5378A31909D90A50B22EB3C08592286 /* Reuse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB2FB28E12B139C10AA967C2202A8CA9 /* Pods-Reuse_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 800879A7D0D00FA16B3A5A72A2D494EB /* Pods-Reuse_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -41,43 +44,46 @@
 
 /* Begin PBXFileReference section */
 		0D384265A0474349B904ED188B303BD5 /* Reuse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reuse-dummy.m"; sourceTree = "<group>"; };
+		0E67E3EFD80E6AFF00296AD508724CF9 /* UITableViewReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewReuser.swift; sourceTree = "<group>"; };
 		1ABD99F9CC34DF6FA9723A8FCD18FE53 /* Reuse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reuse-prefix.pch"; sourceTree = "<group>"; };
 		1C47160ECE898D91D4C8B6B7CBFB71B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FBBA6CD060B80DB7BB4B6332596C5F0 /* UICollectionViewReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UICollectionViewReuser.swift; sourceTree = "<group>"; };
+		27F6D71840C51D36C7BB42995342C81E /* NullInstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NullInstanceReuser.swift; sourceTree = "<group>"; };
 		2CA98BB1451268BE6EC6A709D8B9F463 /* Reuse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reuse.xcconfig; sourceTree = "<group>"; };
-		2CE93DC3A3A397F32BEF32DC82EBCC1E /* Pods_Reuse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reuse_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		32568FCECBCE50AF7533ACDAA6C31CE5 /* Handoff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Handoff.swift; sourceTree = "<group>"; };
+		2CE93DC3A3A397F32BEF32DC82EBCC1E /* Pods_Reuse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Reuse_Tests.framework; path = "Pods-Reuse_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3017B3F4684D7EA181911A8F6D25A5D2 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		367CFB90F00CD7021764E7E4E3188BCF /* Pods-Reuse_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Reuse_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		368592A3DCE88453E7B8BA979C2CDD18 /* UITableViewReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewReuser.swift; sourceTree = "<group>"; };
+		3AF1052ED4F6F9B67D0B88B9A946F6F9 /* Usable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Usable.swift; sourceTree = "<group>"; };
+		3BD6CCEB6FAF496CB4F1FDEFFFB6ED47 /* Reuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reuser.swift; sourceTree = "<group>"; };
 		3FA783A095D2BEC783B2DCCA5174954E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D7156E0B40F8138FAA3F8C13F2526D /* Pods-Reuse_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reuse_Example-umbrella.h"; sourceTree = "<group>"; };
 		496F3994AB5A53465209180C7DD3C4D9 /* Pods-Reuse_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reuse_Example-dummy.m"; sourceTree = "<group>"; };
-		50A2D75F729FA34ADA570E44A3E2E9F8 /* Reuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reuser.swift; sourceTree = "<group>"; };
 		53DF04B08198A66DD3386FCC869B0F0B /* Pods-Reuse_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reuse_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5E6F51073A67BB51458A447FBADF2308 /* Pods-Reuse_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Tests-resources.sh"; sourceTree = "<group>"; };
-		607CEDD6AD649787A98B1E08C742D0E1 /* UICollectionViewReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UICollectionViewReuser.swift; sourceTree = "<group>"; };
-		69CBC967D72224F498D856DAC6059C71 /* InstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstanceReuser.swift; sourceTree = "<group>"; };
-		748F52A5922D5089A3730C397A52D4B6 /* Pods-Reuse_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Reuse_Tests.modulemap"; sourceTree = "<group>"; };
-		764DD9874D97D53D5F4687FBED665646 /* Pods_Reuse_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reuse_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6059F6D8960EA89FA3EBAE9479B71B33 /* HeaderReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HeaderReuser.swift; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		748F52A5922D5089A3730C397A52D4B6 /* Pods-Reuse_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Reuse_Tests.modulemap"; sourceTree = "<group>"; };
+		764DD9874D97D53D5F4687FBED665646 /* Pods_Reuse_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Reuse_Example.framework; path = "Pods-Reuse_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		800879A7D0D00FA16B3A5A72A2D494EB /* Pods-Reuse_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reuse_Tests-umbrella.h"; sourceTree = "<group>"; };
+		81FF4C97C423AF59E9C851AABAFA564E /* InstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstanceReuser.swift; sourceTree = "<group>"; };
 		8514F150D24D8CEA27D36C76A6AA8FFA /* Pods-Reuse_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8945E6560C32A0C3D070C1EC3296E233 /* Pods-Reuse_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		923101E81E7E988C616E8AC2ABE72356 /* Pods-Reuse_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Reuse_Example.modulemap"; sourceTree = "<group>"; };
-		935653BB42832ECC03DD1E1D0131B082 /* Reuse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Reuse.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		923101E81E7E988C616E8AC2ABE72356 /* Pods-Reuse_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Reuse_Example.modulemap"; sourceTree = "<group>"; };
+		935653BB42832ECC03DD1E1D0131B082 /* Reuse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Reuse.modulemap; sourceTree = "<group>"; };
+		93A2D1C798C049C41E8AD2BDA89BEE28 /* DataInstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataInstanceReuser.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94D470B9E8C9B0B9674AA542C4B73B4F /* Pods-Reuse_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Reuse_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A80D00C3FD3C197CF7A6880D64C12025 /* DataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
-		ACEB9D675DA40E954B3D11BAC03921A7 /* AnyInstaceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyInstaceReuser.swift; sourceTree = "<group>"; };
-		B11133C4B2CDF9E2C4E5EB41825B9EF9 /* Usable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Usable.swift; sourceTree = "<group>"; };
-		B5AEBB7AA4EE7F48C756767BA3E688FE /* NullInstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NullInstanceReuser.swift; sourceTree = "<group>"; };
+		9D310D6ED4F25FBB7E1C6EF306BA42BE /* AnyInstaceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyInstaceReuser.swift; sourceTree = "<group>"; };
+		B3915857AE23A2C4DADDAFFC348D3169 /* DataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		B6EC8FBA5FE69DAD6DC787BB5B8CB96D /* Pods-Reuse_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Reuse_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA751117C05F91EE24D8BC96E34C1798 /* Pods-Reuse_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Reuse_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BE2217742B31ECB0E1C2A81CBBE5961D /* Pods-Reuse_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reuse_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BE28386743AB94B7E117EB87E4FD4F04 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		BF362970940F3319C6B6AE4F1080BDB4 /* Pods-Reuse_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Example-resources.sh"; sourceTree = "<group>"; };
-		CA02ED1BAEF80F266D7CE8F6F4527C1B /* DataInstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataInstanceReuser.swift; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBF06201F1DB41000D04CDEC09274DBF /* Pods-Reuse_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reuse_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E934382BAC7AEFC8B7BEF2966E0126CE /* Reuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA3B1A66B7E2874C4B920EDC924A177 /* AnyHeaderReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyHeaderReuser.swift; sourceTree = "<group>"; };
+		D48D3D722E3FCE1E3B160648D22F1524 /* Handoff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Handoff.swift; sourceTree = "<group>"; };
+		E934382BAC7AEFC8B7BEF2966E0126CE /* Reuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reuse.framework; path = Reuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE361495A24E2C0305732625601A46A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F21D9E7769EEA8C7F03E3580D6945D7E /* Pods-Reuse_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reuse_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F5378A31909D90A50B22EB3C08592286 /* Reuse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reuse-umbrella.h"; sourceTree = "<group>"; };
@@ -93,11 +99,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A05FEB2FD3C5A41A2721B6938301F8BC /* Frameworks */ = {
+		2AEB6D173A578EE66D2CCD4ADF3B91A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F2F5919CF946E39740EB63C098451F /* Foundation.framework in Frameworks */,
+				7142D00D86A42CDE73C1B1AC32557AC8 /* Foundation.framework in Frameworks */,
+				F2627F2CF5628E076F176E240DA8A7BF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		44FF285E750E70359E6F47DB0E797D90 /* Pods-Reuse_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +145,27 @@
 			path = "Target Support Files/Pods-Reuse_Tests";
 			sourceTree = "<group>";
 		};
+		523FA0D0C824CCFEE68B5C418C372890 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CEA3B1A66B7E2874C4B920EDC924A177 /* AnyHeaderReuser.swift */,
+				9D310D6ED4F25FBB7E1C6EF306BA42BE /* AnyInstaceReuser.swift */,
+				93A2D1C798C049C41E8AD2BDA89BEE28 /* DataInstanceReuser.swift */,
+				B3915857AE23A2C4DADDAFFC348D3169 /* DataProvider.swift */,
+				D48D3D722E3FCE1E3B160648D22F1524 /* Handoff.swift */,
+				6059F6D8960EA89FA3EBAE9479B71B33 /* HeaderReuser.swift */,
+				81FF4C97C423AF59E9C851AABAFA564E /* InstanceReuser.swift */,
+				27F6D71840C51D36C7BB42995342C81E /* NullInstanceReuser.swift */,
+				3017B3F4684D7EA181911A8F6D25A5D2 /* Reusable.swift */,
+				3BD6CCEB6FAF496CB4F1FDEFFFB6ED47 /* Reuser.swift */,
+				1FBBA6CD060B80DB7BB4B6332596C5F0 /* UICollectionViewReuser.swift */,
+				0E67E3EFD80E6AFF00296AD508724CF9 /* UITableViewReuser.swift */,
+				3AF1052ED4F6F9B67D0B88B9A946F6F9 /* Usable.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		6021621258EC9FE2B74254C3A364D210 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,46 +180,12 @@
 			path = "Example/Pods/Target Support Files/Reuse";
 			sourceTree = "<group>";
 		};
-		68052DDD701E80CF0CD5AA200965D44E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				ACEB9D675DA40E954B3D11BAC03921A7 /* AnyInstaceReuser.swift */,
-				CA02ED1BAEF80F266D7CE8F6F4527C1B /* DataInstanceReuser.swift */,
-				A80D00C3FD3C197CF7A6880D64C12025 /* DataProvider.swift */,
-				32568FCECBCE50AF7533ACDAA6C31CE5 /* Handoff.swift */,
-				69CBC967D72224F498D856DAC6059C71 /* InstanceReuser.swift */,
-				B5AEBB7AA4EE7F48C756767BA3E688FE /* NullInstanceReuser.swift */,
-				BE28386743AB94B7E117EB87E4FD4F04 /* Reusable.swift */,
-				50A2D75F729FA34ADA570E44A3E2E9F8 /* Reuser.swift */,
-				607CEDD6AD649787A98B1E08C742D0E1 /* UICollectionViewReuser.swift */,
-				368592A3DCE88453E7B8BA979C2CDD18 /* UITableViewReuser.swift */,
-				B11133C4B2CDF9E2C4E5EB41825B9EF9 /* Usable.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		6F2F3DB1D50C1DC67149EC3BE52E5FF4 /* Reuse */ = {
-			isa = PBXGroup;
-			children = (
-				68052DDD701E80CF0CD5AA200965D44E /* Classes */,
-			);
-			path = Reuse;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				868C5A84311A9F86FC0040C816B47971 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				97CC37F57BD542499C6A84B8F354CAA5 /* Products */,
 				DC38CAD5EAE0DC82C3112B90855BF2CB /* Targets Support Files */,
 			);
@@ -228,19 +230,20 @@
 		AC6DF8CF7689E822159D199D61F29564 /* Reuse */ = {
 			isa = PBXGroup;
 			children = (
-				6F2F3DB1D50C1DC67149EC3BE52E5FF4 /* Reuse */,
+				DB47580CDAD33027CAB06624E217D948 /* Reuse */,
 				6021621258EC9FE2B74254C3A364D210 /* Support Files */,
 			);
 			name = Reuse;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		DB47580CDAD33027CAB06624E217D948 /* Reuse */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				523FA0D0C824CCFEE68B5C418C372890 /* Classes */,
 			);
-			name = Frameworks;
+			name = Reuse;
+			path = Reuse;
 			sourceTree = "<group>";
 		};
 		DC38CAD5EAE0DC82C3112B90855BF2CB /* Targets Support Files */ = {
@@ -250,6 +253,15 @@
 				44FF285E750E70359E6F47DB0E797D90 /* Pods-Reuse_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,8 +315,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E15AD3104A9683644C150D75D690F8DF /* Build configuration list for PBXNativeTarget "Reuse" */;
 			buildPhases = (
-				CE3D3E08EE12B03B20EE3D145107D6F4 /* Sources */,
-				A05FEB2FD3C5A41A2721B6938301F8BC /* Frameworks */,
+				1099D76155F2DCE7F44FDFB0D79D7972 /* Sources */,
+				2AEB6D173A578EE66D2CCD4ADF3B91A3 /* Frameworks */,
 				2FCDBBB25576D1A2B47EF8F3972ED591 /* Headers */,
 			);
 			buildRules = (
@@ -341,7 +353,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -363,30 +375,32 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1099D76155F2DCE7F44FDFB0D79D7972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C13508315F50039107C6B6874E3D36E7 /* AnyHeaderReuser.swift in Sources */,
+				0CDA9BF09EE1F10AC1E9A9EA8F4DCA86 /* AnyInstaceReuser.swift in Sources */,
+				6F5E604EA3ABDBE7B57223FD812AABC6 /* DataInstanceReuser.swift in Sources */,
+				AD0A4AA02300CB62D29097BAC89F1758 /* DataProvider.swift in Sources */,
+				6DFCA4AB3039B79E215853CF6D695447 /* Handoff.swift in Sources */,
+				6ED8063C81F7E479964E6CDD7402579E /* HeaderReuser.swift in Sources */,
+				E89B0EAF678B310FEFCB56619D319A43 /* InstanceReuser.swift in Sources */,
+				176A5027A6D873E344C3CCE20D3C2C9D /* NullInstanceReuser.swift in Sources */,
+				9C201FFE970A079018EC25AD9F7FA5D2 /* Reusable.swift in Sources */,
+				29CB50262D0629F144FCAF8ACC9D0580 /* Reuse-dummy.m in Sources */,
+				97AEB60E5361FED05C920753D72D060A /* Reuser.swift in Sources */,
+				E9CBF1D702FE72D4FC5C13ECF6B4D907 /* UICollectionViewReuser.swift in Sources */,
+				0AB92D54A187BF69ABB635B3C1688A44 /* UITableViewReuser.swift in Sources */,
+				5363B3C3C56EB64C9A268B7147695059 /* Usable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2F67403236F1D72FB3AA1F8BF6B9963E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				59D849E8064E0494750607F603ED57D6 /* Pods-Reuse_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE3D3E08EE12B03B20EE3D145107D6F4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				17CCC3771B001D541A23077F51A37CD8 /* AnyInstaceReuser.swift in Sources */,
-				07A82DC8260879D1C1AD3226FE2D0138 /* DataInstanceReuser.swift in Sources */,
-				379AB9B99D0EC00C4BC4594CA0A39448 /* DataProvider.swift in Sources */,
-				80035C2BEB20BD25078DE0DAD84822E3 /* Handoff.swift in Sources */,
-				7A1F249E8B6E656BB0A55C37A48AC499 /* InstanceReuser.swift in Sources */,
-				D14EF207BCB6D1A553CB1E8A2A992B43 /* NullInstanceReuser.swift in Sources */,
-				671D6C49AFFFB512BE9C3A635EBEB39E /* Reusable.swift in Sources */,
-				B07E7F814B64CBC006A5D3BEF320BD9C /* Reuse-dummy.m in Sources */,
-				49A0C127AFCD3DD0D6CF55536525BCD6 /* Reuser.swift in Sources */,
-				51CAE5C926FFD00FB84E6FC781C1309B /* UICollectionViewReuser.swift in Sources */,
-				3373278119982D1416D60848093C6D08 /* UITableViewReuser.swift in Sources */,
-				896CDE5DD5BF64934EEB26494BED9AD6 /* Usable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,32 +433,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -465,38 +467,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		3E647ED39A539CB5F9A7A989ED3410F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CA98BB1451268BE6EC6A709D8B9F463 /* Reuse.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Reuse/Reuse-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Reuse/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Reuse/Reuse.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Reuse;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		74E85E39D45656ABC541F772C1C92617 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -577,31 +547,19 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -615,11 +573,43 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		A5AE64E7664D887AF1EC4F0488374763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA98BB1451268BE6EC6A709D8B9F463 /* Reuse.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reuse/Reuse-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Reuse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Reuse/Reuse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Reuse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B322473952CEE086AACBA0922806C8FC /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -650,6 +640,38 @@
 				PRODUCT_NAME = Pods_Reuse_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EAB13FD385011DA7AC3BDD9DA41411A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA98BB1451268BE6EC6A709D8B9F463 /* Reuse.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reuse/Reuse-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Reuse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Reuse/Reuse.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Reuse;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -692,39 +714,6 @@
 			};
 			name = Debug;
 		};
-		F737BDFA9418C3D88CF0F8E4219A4EC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CA98BB1451268BE6EC6A709D8B9F463 /* Reuse.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Reuse/Reuse-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Reuse/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Reuse/Reuse.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Reuse;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -758,8 +747,8 @@
 		E15AD3104A9683644C150D75D690F8DF /* Build configuration list for PBXNativeTarget "Reuse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F737BDFA9418C3D88CF0F8E4219A4EC4 /* Debug */,
-				3E647ED39A539CB5F9A7A989ED3410F6 /* Release */,
+				A5AE64E7664D887AF1EC4F0488374763 /* Debug */,
+				EAB13FD385011DA7AC3BDD9DA41411A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

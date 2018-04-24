@@ -50,15 +50,13 @@ extension Reuser: UITableViewDataSource, UITableViewDelegate {
         getInstance(on: sourceIndexPath).move(to: destinationIndexPath)
     }
     
-    private func getInstance(on indexPath: IndexPath) -> InstanceReuser {
-        do {
-            let instance = try on(indexPath: indexPath)
-            return instance
-        }
-        catch {
-            assert(false, error.localizedDescription)
-        }
-        return NullInstanceReuser()
+    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return getHeaderView(at: section)
+    }
+    
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        guard let instance = getHeader(at: section) else { return 0 }
+        return instance.height
     }
 }
 

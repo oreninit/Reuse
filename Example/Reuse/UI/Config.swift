@@ -26,8 +26,26 @@ extension Reuser {
     static func configure(withData data: DataProvider, navigator: Navigator?) -> Reuser {
         let reuser = Reuser(dataProvider: data)
         let instanceReuser = PersonReuser(navigator: navigator)
-        reuser.register(instanceReuser, for: Person.self)
-        reuser.register(AdReuser(), for: Ad.self)
+        reuser.register(instanceReuser, forObject: Person.self)
+        reuser.register(AdReuser(), forObject: Ad.self)
+        
+        let header = AnyHeaderReuser<UILabel, Int>(height: 40.0, closure: { view, object in
+            view.text = "   \(object) friends"
+        })
+        reuser.register(header, forHeader: Int.self)
+        
         return reuser
     }    
+}
+
+extension Int: Usable {}
+extension UILabel: ReusableHeader {
+    
+    public static func newInstance() -> ReusableHeader {
+        let label = UILabel(frame: .zero)
+        label.backgroundColor = .white
+        label.textColor = .purple
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
+        return label
+    }
 }

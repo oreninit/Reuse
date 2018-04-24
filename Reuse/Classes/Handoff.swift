@@ -50,5 +50,7 @@ extension ListView {
     func moveRow(at indexPath: IndexPath, to newIndexPath: IndexPath) {}
 }
 
-extension UITableView: ListView {}
-extension UICollectionView: ListView {}
+extension UITableView: ListView {
+}
+extension UICollectionView: ListView {
+}

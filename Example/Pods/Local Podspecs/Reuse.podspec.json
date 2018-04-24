@@ -1,22 +1,24 @@
 {
   "name": "Reuse",
   "version": "0.1.0",
-  "summary": "A short description of Reuse.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/OreniOS/Reuse",
+  "summary": "A library to simplify the process of populating table views and collection views",
+  "description": "Reuse is an easy to use library which helps tackle the reptitive task of populating UITableView/UICollectionView simply and elegantly.\nIt is driven by data and could even take control of managing the display and database updates for you, leaving you with lean view controllers.",
+  "homepage": "https://github.com/oreninit/Reuse",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "OreniOS": "orentf@gmail.com"
+    "Oreninit": "oreninit@gmail.com"
   },
   "source": {
-    "git": "https://github.com/OreniOS/Reuse.git",
+    "git": "https://github.com/oreninit/Reuse.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/oreninit",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.3"
   },
-  "source_files": "Reuse/Classes/**/*"
+  "source_files": "Reuse/Classes/**/*",
+  "frameworks": "UIKit"
 }

@@ -11,6 +11,8 @@ import Reuse
 
 class PeopleDatabase: Section, DataProvider {
     
+    var headerObject: Usable? { return data.filter({ $0 is Person }).count }
+    
     var data: [Usable]
     
     init() {
