@@ -29,11 +29,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         ]
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        collectionView?.handoff(to: reuser)
-    }
-    
     @objc private func showTable() {
         navigator?.showTable(of: data)
     }

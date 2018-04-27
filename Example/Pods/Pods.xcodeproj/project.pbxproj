@@ -26,7 +26,6 @@
 		AD0A4AA02300CB62D29097BAC89F1758 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3915857AE23A2C4DADDAFFC348D3169 /* DataProvider.swift */; };
 		C13508315F50039107C6B6874E3D36E7 /* AnyHeaderReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3B1A66B7E2874C4B920EDC924A177 /* AnyHeaderReuser.swift */; };
 		E89B0EAF678B310FEFCB56619D319A43 /* InstanceReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF4C97C423AF59E9C851AABAFA564E /* InstanceReuser.swift */; };
-		E9CBF1D702FE72D4FC5C13ECF6B4D907 /* UICollectionViewReuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBA6CD060B80DB7BB4B6332596C5F0 /* UICollectionViewReuser.swift */; };
 		F2627F2CF5628E076F176E240DA8A7BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
 		F526FD6FF2074D10E8BF08EF898C0B84 /* Reuse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5378A31909D90A50B22EB3C08592286 /* Reuse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB2FB28E12B139C10AA967C2202A8CA9 /* Pods-Reuse_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 800879A7D0D00FA16B3A5A72A2D494EB /* Pods-Reuse_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,10 +46,9 @@
 		0E67E3EFD80E6AFF00296AD508724CF9 /* UITableViewReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewReuser.swift; sourceTree = "<group>"; };
 		1ABD99F9CC34DF6FA9723A8FCD18FE53 /* Reuse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reuse-prefix.pch"; sourceTree = "<group>"; };
 		1C47160ECE898D91D4C8B6B7CBFB71B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FBBA6CD060B80DB7BB4B6332596C5F0 /* UICollectionViewReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UICollectionViewReuser.swift; sourceTree = "<group>"; };
 		27F6D71840C51D36C7BB42995342C81E /* NullInstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NullInstanceReuser.swift; sourceTree = "<group>"; };
 		2CA98BB1451268BE6EC6A709D8B9F463 /* Reuse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reuse.xcconfig; sourceTree = "<group>"; };
-		2CE93DC3A3A397F32BEF32DC82EBCC1E /* Pods_Reuse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Reuse_Tests.framework; path = "Pods-Reuse_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE93DC3A3A397F32BEF32DC82EBCC1E /* Pods_Reuse_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reuse_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3017B3F4684D7EA181911A8F6D25A5D2 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		367CFB90F00CD7021764E7E4E3188BCF /* Pods-Reuse_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Reuse_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3AF1052ED4F6F9B67D0B88B9A946F6F9 /* Usable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Usable.swift; sourceTree = "<group>"; };
@@ -62,17 +60,17 @@
 		5E6F51073A67BB51458A447FBADF2308 /* Pods-Reuse_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Tests-resources.sh"; sourceTree = "<group>"; };
 		6059F6D8960EA89FA3EBAE9479B71B33 /* HeaderReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HeaderReuser.swift; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		748F52A5922D5089A3730C397A52D4B6 /* Pods-Reuse_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Reuse_Tests.modulemap"; sourceTree = "<group>"; };
-		764DD9874D97D53D5F4687FBED665646 /* Pods_Reuse_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Reuse_Example.framework; path = "Pods-Reuse_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		748F52A5922D5089A3730C397A52D4B6 /* Pods-Reuse_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Reuse_Tests.modulemap"; sourceTree = "<group>"; };
+		764DD9874D97D53D5F4687FBED665646 /* Pods_Reuse_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reuse_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		800879A7D0D00FA16B3A5A72A2D494EB /* Pods-Reuse_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reuse_Tests-umbrella.h"; sourceTree = "<group>"; };
 		81FF4C97C423AF59E9C851AABAFA564E /* InstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InstanceReuser.swift; sourceTree = "<group>"; };
 		8514F150D24D8CEA27D36C76A6AA8FFA /* Pods-Reuse_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8945E6560C32A0C3D070C1EC3296E233 /* Pods-Reuse_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reuse_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		923101E81E7E988C616E8AC2ABE72356 /* Pods-Reuse_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Reuse_Example.modulemap"; sourceTree = "<group>"; };
-		935653BB42832ECC03DD1E1D0131B082 /* Reuse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Reuse.modulemap; sourceTree = "<group>"; };
+		923101E81E7E988C616E8AC2ABE72356 /* Pods-Reuse_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Reuse_Example.modulemap"; sourceTree = "<group>"; };
+		935653BB42832ECC03DD1E1D0131B082 /* Reuse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Reuse.modulemap; sourceTree = "<group>"; };
 		93A2D1C798C049C41E8AD2BDA89BEE28 /* DataInstanceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataInstanceReuser.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94D470B9E8C9B0B9674AA542C4B73B4F /* Pods-Reuse_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Reuse_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D310D6ED4F25FBB7E1C6EF306BA42BE /* AnyInstaceReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyInstaceReuser.swift; sourceTree = "<group>"; };
 		B3915857AE23A2C4DADDAFFC348D3169 /* DataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -83,7 +81,7 @@
 		CBF06201F1DB41000D04CDEC09274DBF /* Pods-Reuse_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reuse_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CEA3B1A66B7E2874C4B920EDC924A177 /* AnyHeaderReuser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyHeaderReuser.swift; sourceTree = "<group>"; };
 		D48D3D722E3FCE1E3B160648D22F1524 /* Handoff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Handoff.swift; sourceTree = "<group>"; };
-		E934382BAC7AEFC8B7BEF2966E0126CE /* Reuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reuse.framework; path = Reuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E934382BAC7AEFC8B7BEF2966E0126CE /* Reuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE361495A24E2C0305732625601A46A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F21D9E7769EEA8C7F03E3580D6945D7E /* Pods-Reuse_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reuse_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F5378A31909D90A50B22EB3C08592286 /* Reuse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reuse-umbrella.h"; sourceTree = "<group>"; };
@@ -158,11 +156,9 @@
 				27F6D71840C51D36C7BB42995342C81E /* NullInstanceReuser.swift */,
 				3017B3F4684D7EA181911A8F6D25A5D2 /* Reusable.swift */,
 				3BD6CCEB6FAF496CB4F1FDEFFFB6ED47 /* Reuser.swift */,
-				1FBBA6CD060B80DB7BB4B6332596C5F0 /* UICollectionViewReuser.swift */,
 				0E67E3EFD80E6AFF00296AD508724CF9 /* UITableViewReuser.swift */,
 				3AF1052ED4F6F9B67D0B88B9A946F6F9 /* Usable.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -242,7 +238,6 @@
 			children = (
 				523FA0D0C824CCFEE68B5C418C372890 /* Classes */,
 			);
-			name = Reuse;
 			path = Reuse;
 			sourceTree = "<group>";
 		};
@@ -390,7 +385,6 @@
 				9C201FFE970A079018EC25AD9F7FA5D2 /* Reusable.swift in Sources */,
 				29CB50262D0629F144FCAF8ACC9D0580 /* Reuse-dummy.m in Sources */,
 				97AEB60E5361FED05C920753D72D060A /* Reuser.swift in Sources */,
-				E9CBF1D702FE72D4FC5C13ECF6B4D907 /* UICollectionViewReuser.swift in Sources */,
 				0AB92D54A187BF69ABB635B3C1688A44 /* UITableViewReuser.swift in Sources */,
 				5363B3C3C56EB64C9A268B7147695059 /* Usable.swift in Sources */,
 			);

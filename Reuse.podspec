@@ -4,8 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = 'A library to simplify the process of populating table views and collection views'
 
   s.description      = <<-DESC
-Reuse is an easy to use library which helps tackle the reptitive task of populating UITableView/UICollectionView simply and elegantly.
-It is driven by data and could even take control of managing the display and database updates for you, leaving you with lean view controllers.
+Reuse is a simple library which helps tackle the tedious task of populating UITableView/UICollectionView simply and elegantly.
 DESC
   s.homepage         = 'https://github.com/oreninit/Reuse'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

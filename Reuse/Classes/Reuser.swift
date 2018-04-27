@@ -62,15 +62,12 @@ public class Reuser: NSObject {
     /// Used to update UI when an action is performed (i.e delete, move, reload)
     ///
     /// - Parameter tableView: A UITableView instance
-    public func setTableView(_ tableView: UITableView?) {
+    public func link(with tableView: UITableView?) {
         self.listView = tableView
     }
     
-    public func setCollectionView(_ collectionView: UICollectionView?) {
-        self.listView = collectionView
-    }
-    
     public func reload() {
+        headers.removeAll()
         listView?.reloadData()
     }
 

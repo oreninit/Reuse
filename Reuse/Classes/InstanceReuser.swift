@@ -21,7 +21,7 @@ public protocol InstanceReuser {
     
     /// A function that feeds the current object for upcoming operations
     ///
-    /// - Parameter object: an `Object` instance, as defined upon registering `InstanceReuser`'s
+    /// - Parameter object: a `Usable` instance, as defined upon registering `InstanceReuser`'s
     /// - Returns:
     mutating func setObject(_ object: Usable)
     

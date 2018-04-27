@@ -31,7 +31,7 @@ class TableViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.handoff(to: reuser)
+        tableView.passHandling(to: reuser)
     }
     
     @objc private func editingToggle() {

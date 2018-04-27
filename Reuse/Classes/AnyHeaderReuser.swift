@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// A generic HeaderReuser where each instance defines it's own `ReusableHeader` and `Usable`
 public struct AnyHeaderReuser<R: ReusableHeader, O: Usable>: HeaderReuser {
     
     public var object: O? = nil
@@ -18,7 +19,9 @@ public struct AnyHeaderReuser<R: ReusableHeader, O: Usable>: HeaderReuser {
     
     private var reusableHeaderType: R.Type
     
-    public init(viewIdentifier: String? = nil, height: CGFloat, closure: @escaping ((R, O) -> ())) {
+    public init(viewIdentifier: String? = nil,
+                height: CGFloat,
+                closure: @escaping ((R, O) -> ())) {
         self.viewIdentifier = viewIdentifier
         self.height = height
         self.closure = closure
