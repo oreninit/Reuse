@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Reuse'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A library to simplify the process of populating table views and collection views'
 
   s.description      = <<-DESC
