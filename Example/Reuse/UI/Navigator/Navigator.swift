@@ -38,5 +38,4 @@ struct ApplicationNavigator: Navigator {
         details.viewModel = person
         navigationController?.pushViewController(details, animated: true)
     }
-    
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// A protocol defining an element which can manage configuration and interaction of a `Reusable`
 public protocol InstanceReuser {
     
     // The dequeue reuse identifier for the corresponding view

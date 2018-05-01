@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// A protocol defining an element which can manage configuration of a `ReusableHeader`
 public protocol HeaderReuser {
     
     // The dequeue reuse identifier for the corresponding view
